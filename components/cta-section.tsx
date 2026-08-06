@@ -9,12 +9,12 @@ export function CtaSection() {
           {siteConfig.name} is coming soon
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-lg text-muted">
-          A private, searchable visual library for your Mac — on-device OCR,
+          A private, searchable visual library for your Mac with on-device OCR,
           timeline browsing, and menu bar search.
         </p>
         <div className="mt-8">
           <Button disabled className="cursor-not-allowed opacity-70">
-            Mac App Store — Coming soon
+            Mac App Store: Coming soon
           </Button>
         </div>
       </div>

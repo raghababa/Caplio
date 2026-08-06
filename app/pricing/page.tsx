@@ -100,7 +100,7 @@ export default function PricingPage() {
             <div>
               <dt className="font-medium">Is the trial an App Store offer?</dt>
               <dd className="mt-2 text-sm leading-relaxed text-muted">
-                No. Caplio offers a 7-day free trial on this Mac during
+                No. Caplio offers a 7-day free trial on your Mac during
                 onboarding. After that, subscribe through the Mac App Store.
               </dd>
             </div>

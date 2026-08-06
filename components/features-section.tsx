@@ -10,8 +10,8 @@ export function FeaturesSection() {
             Everything you need to find any image
           </h2>
           <p className="mt-4 text-lg text-muted">
-            Powerful tools for screenshot search — designed for macOS, built for
-            privacy.
+            Powerful tools for screenshot search, designed for macOS and built
+            for privacy.
           </p>
         </div>
 

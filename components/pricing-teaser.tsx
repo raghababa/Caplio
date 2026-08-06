@@ -9,14 +9,15 @@ export function PricingTeaser() {
             Pricing
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-            Try free for 7 days on this Mac
+            Try free for 7 days on your Mac
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted">
             Your data stays safely on your Mac. Subscribe after the trial to
             continue using Caplio.
           </p>
           <p className="mt-3 text-sm text-muted">
-            Caplio Pro — monthly or yearly subscription after your trial ends.
+            Caplio Pro is available as a monthly or yearly subscription after
+            your trial ends.
           </p>
           <div className="mt-8">
             <Button href="/pricing" variant="primary">

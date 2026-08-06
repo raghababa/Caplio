@@ -23,7 +23,7 @@ export function Hero() {
 
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button disabled className="min-w-[180px] cursor-not-allowed opacity-70">
-              Mac App Store — Coming soon
+              Mac App Store: Coming soon
             </Button>
             <Button href="/#features" variant="secondary">
               Explore features

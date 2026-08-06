@@ -19,7 +19,7 @@ const sections = [
   {
     title: "Data stored on your Mac",
     content: [
-      `${siteConfig.name} stores your screenshot library, thumbnails, OCR text, search index, and app settings locally on your Mac — typically in your user Library folder.`,
+      `${siteConfig.name} stores your screenshot library, thumbnails, OCR text, search index, and app settings locally on your Mac, typically in your user Library folder.`,
       "Caplio does not upload your screenshots or OCR results to our servers for processing, analysis, or storage.",
     ],
   },

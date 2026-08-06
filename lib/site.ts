@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Caplio",
-  tagline: "Find any screenshot or image on your Mac.",
+  tagline: "Find and organize any screenshot or image on your Mac",
   description:
     "Caplio turns folders you choose into a private, searchable visual library with on-device OCR, timeline browsing, and menu bar search.",
   url: "https://caplio.vercel.app",
@@ -28,7 +28,7 @@ export const features = [
     id: "menubar",
     title: "Quick search from the menu bar",
     description:
-      "Recent shots, full-text search, and processing status — without opening a window.",
+      "Recent shots, full-text search, and processing status without opening a window.",
     detail:
       "Caplio lives in your menu bar so you can jump to any screenshot the moment you need it.",
     image: "/screenshots/search.png",
@@ -50,7 +50,7 @@ export const features = [
     description:
       "Optionally organize files by date or category, with move previews and restore history.",
     detail:
-      "Keep files where they are, or let Caplio sort new screenshots into a structured folder tree — always with undo.",
+      "Keep files where they are, or let Caplio sort new screenshots into a structured folder tree, always with undo.",
     image: "/screenshots/organize.png",
     imageAlt: "Caplio file organization",
   },
@@ -77,7 +77,7 @@ export const pricingPlans = [
   {
     name: "Free trial",
     price: "7 days",
-    period: "on this Mac",
+    period: "on your Mac",
     description:
       "Try every feature during onboarding. Connect a folder, scan screenshots, and explore the full library.",
     features: [
