@@ -32,38 +32,31 @@ export function HeroMedia() {
   }, [reduceMotion]);
 
   return (
-    <div className="relative mx-auto mt-16 max-w-4xl">
-      <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-2xl shadow-black/8 ring-1 ring-black/5">
-        <div className="flex items-center gap-2 border-b border-border bg-white px-4 py-3">
-          <span className="size-3 rounded-full bg-[#ff5f57]" />
-          <span className="size-3 rounded-full bg-[#febc2e]" />
-          <span className="size-3 rounded-full bg-[#28c840]" />
-          <span className="ml-2 text-xs text-muted">Caplio</span>
-        </div>
-
-        <div className="relative aspect-video bg-gradient-to-br from-surface to-white">
+    <div className="relative mx-auto mt-16 max-w-5xl px-2">
+      <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-2xl shadow-black/10 ring-1 ring-black/5">
+        <div className="relative aspect-video bg-[#f7f6f3]">
           {!reduceMotion && videoAvailable ? (
             <video
               ref={videoRef}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-contain"
               autoPlay
               muted
               loop
               playsInline
-              poster="/screenshots/timeline.svg"
+              poster="/screenshots/timeline.png"
               onError={() => setVideoAvailable(false)}
             >
               <source src="/video/caplio-demo.mp4" type="video/mp4" />
-              <source src="/video/caplio-demo.webm" type="video/webm" />
+              <source src="/video/caplio-appstore.mov" type="video/quicktime" />
             </video>
           ) : (
             <Image
-              src="/screenshots/timeline.svg"
+              src="/screenshots/timeline.png"
               alt="Caplio app preview"
               fill
-              className="object-cover object-top"
+              className="object-contain"
               priority
-              sizes="(max-width: 896px) 100vw, 896px"
+              sizes="(max-width: 1024px) 100vw, 1024px"
             />
           )}
         </div>

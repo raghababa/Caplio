@@ -21,7 +21,7 @@ export const features = [
       "Search words, numbers, URLs, and supported languages inside your images.",
     detail:
       "Caplio uses Apple Vision on your Mac to read text from screenshots with high-quality on-device recognition.",
-    image: "/screenshots/ocr.svg",
+    image: "/screenshots/ocr.png",
     imageAlt: "Caplio OCR search results",
   },
   {
@@ -31,7 +31,7 @@ export const features = [
       "Recent shots, full-text search, and processing status — without opening a window.",
     detail:
       "Caplio lives in your menu bar so you can jump to any screenshot the moment you need it.",
-    image: "/screenshots/menubar.svg",
+    image: "/screenshots/search.png",
     imageAlt: "Caplio menu bar search",
   },
   {
@@ -41,7 +41,7 @@ export const features = [
       "Timeline browsing with categories, thumbnails, and detail views for every indexed image.",
     detail:
       "Scroll through your screenshot history by date, filter by category, and open any image in full detail.",
-    image: "/screenshots/timeline.svg",
+    image: "/screenshots/timeline.png",
     imageAlt: "Caplio timeline library view",
   },
   {
@@ -51,7 +51,7 @@ export const features = [
       "Optionally organize files by date or category, with move previews and restore history.",
     detail:
       "Keep files where they are, or let Caplio sort new screenshots into a structured folder tree — always with undo.",
-    image: "/screenshots/organize.svg",
+    image: "/screenshots/organize.png",
     imageAlt: "Caplio file organization",
   },
 ];

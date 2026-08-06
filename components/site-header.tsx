@@ -12,11 +12,11 @@ export function SiteHeader() {
           className="flex items-center gap-2.5 font-semibold tracking-tight text-foreground transition-opacity hover:opacity-80"
         >
           <Image
-            src="/icon.svg"
+            src="/icon.png"
             alt=""
             width={28}
             height={28}
-            className="rounded-lg"
+            className="rounded-[7px]"
             priority
           />
           {siteConfig.name}
