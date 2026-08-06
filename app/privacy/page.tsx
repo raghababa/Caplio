@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteLayout } from "@/components/site-layout";
+import { createPageMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description:
-    "How Caplio handles your data. Local processing, on-device OCR, and minimal network use.",
-};
+export const metadata: Metadata = createPageMetadata("privacy");
 
 const sections = [
   {

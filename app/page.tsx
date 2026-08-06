@@ -4,6 +4,9 @@ import { Hero } from "@/components/hero";
 import { PricingTeaser } from "@/components/pricing-teaser";
 import { PrivacySection } from "@/components/privacy-section";
 import { SiteLayout } from "@/components/site-layout";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("home");
 
 export default function HomePage() {
   return (

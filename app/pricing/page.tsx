@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { SiteLayout } from "@/components/site-layout";
+import { createPageMetadata } from "@/lib/seo";
 import { pricingPlans, siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Pricing",
-  description:
-    "Try Caplio free for 7 days on your Mac. Subscribe to Caplio Pro after your trial to continue using the app.",
-};
+export const metadata: Metadata = createPageMetadata("pricing");
 
 export default function PricingPage() {
   return (

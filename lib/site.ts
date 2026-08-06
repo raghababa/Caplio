@@ -5,7 +5,44 @@ export const siteConfig = {
     "Caplio turns folders you choose into a private, searchable visual library with on-device OCR, timeline browsing, and menu bar search.",
   url: "https://caplio.vercel.app",
   appStoreStatus: "coming-soon" as const,
+  keywords: [
+    "Caplio",
+    "screenshot search Mac",
+    "OCR screenshots Mac",
+    "find text in screenshots",
+    "Mac screenshot organizer",
+    "on-device OCR",
+    "private screenshot library",
+    "menu bar screenshot search",
+    "macOS screenshot app",
+  ],
 };
+
+export const pages = {
+  home: {
+    path: "/",
+    title: `${siteConfig.name} | ${siteConfig.tagline}`,
+    description: siteConfig.description,
+  },
+  pricing: {
+    path: "/pricing",
+    title: "Pricing",
+    description:
+      "Try Caplio free for 7 days on your Mac. Subscribe to Caplio Pro monthly or yearly after your trial to keep searching and organizing screenshots.",
+  },
+  privacy: {
+    path: "/privacy",
+    title: "Privacy Policy",
+    description:
+      "Caplio privacy policy. Local image processing, on-device OCR, indexing, and search on your Mac. Internet access may be used for App Store purchases.",
+  },
+  terms: {
+    path: "/terms",
+    title: "Terms of Use",
+    description:
+      "Terms of use for Caplio, the macOS app for finding and organizing screenshots with on-device OCR.",
+  },
+} as const;
 
 export const navLinks = [
   { href: "/#features", label: "Features" },

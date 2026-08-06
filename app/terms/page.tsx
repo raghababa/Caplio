@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteLayout } from "@/components/site-layout";
+import { createPageMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Terms of Use",
-  description: "Terms of use for the Caplio macOS application and website.",
-};
+export const metadata: Metadata = createPageMetadata("terms");
 
 const sections = [
   {
