@@ -4,7 +4,8 @@ export const siteConfig = {
   description:
     "Caplio turns folders you choose into a private, searchable visual library with on-device OCR, timeline browsing, and menu bar search.",
   url: "https://caplio.vercel.app",
-  appStoreStatus: "coming-soon" as const,
+  appStoreUrl:
+    "https://apps.apple.com/us/app/caplio/id6786196613?mt=12",
   keywords: [
     "Caplio",
     "screenshot search Mac",
@@ -123,7 +124,7 @@ export const pricingPlans = [
       "Menu bar quick search",
       "Timeline and organization",
     ],
-    cta: "Coming soon",
+    cta: "Download on the Mac App Store",
     highlighted: false,
   },
   {
@@ -139,7 +140,7 @@ export const pricingPlans = [
       "Optional file organization",
       "Restore purchases on same Apple ID",
     ],
-    cta: "Coming soon",
+    cta: "Download on the Mac App Store",
     highlighted: true,
   },
 ];

@@ -33,6 +33,19 @@ export function Button({
 
   if ("href" in props && props.href) {
     const { href, ...linkProps } = props;
+
+    if (href.startsWith("http")) {
+      return (
+        <a
+          href={href}
+          className={classes}
+          target="_blank"
+          rel="noopener noreferrer"
+          {...linkProps}
+        />
+      );
+    }
+
     return <Link href={href} className={classes} {...linkProps} />;
   }
 

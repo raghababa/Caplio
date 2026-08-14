@@ -72,9 +72,9 @@ export default function PricingPage() {
                 ))}
               </ul>
               <Button
-                disabled
+                href={siteConfig.appStoreUrl}
                 variant={plan.highlighted ? "primary" : "secondary"}
-                className="mt-8 w-full cursor-not-allowed opacity-70"
+                className="mt-8 w-full"
               >
                 {plan.cta}
               </Button>

@@ -70,7 +70,7 @@ const sections = [
   {
     title: "Contact",
     content: [
-      "For questions about these Terms, contact us through the support channel listed on the Mac App Store listing once the app is available.",
+      "For questions about these Terms, contact us through the support channel listed on the Mac App Store.",
     ],
   },
 ];

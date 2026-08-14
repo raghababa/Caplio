@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
 import { navLinks, siteConfig } from "@/lib/site";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
 
 export function SiteHeader() {
   return (
@@ -34,8 +34,12 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <Button href="/pricing" variant="secondary" className="text-xs md:text-sm">
-          Coming soon
+        <Button
+          href={siteConfig.appStoreUrl}
+          variant="secondary"
+          className="text-xs md:text-sm"
+        >
+          Download
         </Button>
       </div>
     </header>

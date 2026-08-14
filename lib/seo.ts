@@ -50,6 +50,7 @@ export function getSoftwareApplicationJsonLd() {
     operatingSystem: "macOS",
     description: siteConfig.description,
     url: siteConfig.url,
+    downloadUrl: siteConfig.appStoreUrl,
     image: `${siteConfig.url}/icon.png`,
     screenshot: [
       `${siteConfig.url}/screenshots/timeline.png`,
@@ -62,7 +63,7 @@ export function getSoftwareApplicationJsonLd() {
       priceCurrency: "USD",
       description:
         "7-day free trial on your Mac. Caplio Pro available as a monthly or yearly subscription after the trial.",
-      availability: "https://schema.org/PreOrder",
+      availability: "https://schema.org/InStock",
     },
     featureList: [
       "On-device OCR for screenshots and images",

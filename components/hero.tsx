@@ -10,7 +10,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-6xl px-6 pb-16 pt-20 md:pb-24 md:pt-28">
         <div className="mx-auto max-w-3xl text-center">
           <p className="mb-4 inline-flex items-center rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted">
-            Coming soon on the Mac App Store
+            Available on the Mac App Store
           </p>
 
           <h1 className="text-4xl font-semibold tracking-tight text-foreground md:text-6xl md:leading-[1.08]">
@@ -22,8 +22,8 @@ export function Hero() {
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button disabled className="min-w-[180px] cursor-not-allowed opacity-70">
-              Mac App Store: Coming soon
+            <Button href={siteConfig.appStoreUrl} className="min-w-[180px]">
+              Download for Mac
             </Button>
             <Button href="/#features" variant="secondary">
               Explore features
