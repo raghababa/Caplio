@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { SiteLayout } from "@/components/site-layout";
 import { createPageMetadata } from "@/lib/seo";
-import { pricingPlans, siteConfig } from "@/lib/site";
+import { pricingDisclaimer, pricingPlans, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = createPageMetadata("pricing");
 
@@ -38,11 +38,15 @@ export default function PricingPage() {
                 </p>
               )}
               <h2 className="text-2xl font-semibold">{plan.name}</h2>
-              <div className="mt-3 flex items-baseline gap-2">
-                <span className="text-3xl font-semibold tracking-tight">
-                  {plan.price}
-                </span>
-                <span className="text-sm text-muted">{plan.period}</span>
+              <div className="mt-3 space-y-1">
+                {plan.prices.map((price) => (
+                  <div key={price.period} className="flex items-baseline gap-2">
+                    <span className="text-3xl font-semibold tracking-tight">
+                      {price.amount}
+                    </span>
+                    <span className="text-sm text-muted">{price.period}</span>
+                  </div>
+                ))}
               </div>
               <p className="mt-4 text-sm leading-relaxed text-muted">
                 {plan.description}
@@ -81,6 +85,9 @@ export default function PricingPage() {
             </div>
           ))}
         </div>
+        <p className="mx-auto mt-8 max-w-4xl px-6 text-center text-sm text-muted">
+          {pricingDisclaimer}
+        </p>
       </section>
 
       <section className="border-t border-border bg-surface py-16">

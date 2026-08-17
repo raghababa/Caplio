@@ -29,7 +29,7 @@ export const pages = {
     path: "/pricing",
     title: "Pricing",
     description:
-      "Try Caplio free for 7 days on your Mac. Subscribe to Caplio Pro monthly or yearly after your trial to keep searching and organizing screenshots.",
+      "Try Caplio free for 7 days on your Mac. Caplio Pro is $2.99/month or $29.99/year. Prices shown in USD and may vary by region.",
   },
   privacy: {
     path: "/privacy",
@@ -111,11 +111,13 @@ export const privacyPoints = [
   },
 ];
 
+export const pricingDisclaimer =
+  "Prices shown in USD. App Store pricing may vary by country or region.";
+
 export const pricingPlans = [
   {
     name: "Free trial",
-    price: "7 days",
-    period: "on your Mac",
+    prices: [{ amount: "7 days", period: "on your Mac" }],
     description:
       "Try every feature during onboarding. Connect a folder, scan screenshots, and explore the full library.",
     features: [
@@ -129,8 +131,10 @@ export const pricingPlans = [
   },
   {
     name: "Caplio Pro",
-    price: "Monthly / Yearly",
-    period: "subscription",
+    prices: [
+      { amount: "$2.99", period: "/month" },
+      { amount: "$29.99", period: "/year" },
+    ],
     description:
       "Keep processing new screenshots and using search and timeline after your trial ends.",
     features: [

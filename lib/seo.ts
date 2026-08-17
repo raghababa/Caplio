@@ -57,14 +57,29 @@ export function getSoftwareApplicationJsonLd() {
       `${siteConfig.url}/screenshots/ocr.png`,
       `${siteConfig.url}/screenshots/search.png`,
     ],
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-      description:
-        "7-day free trial on your Mac. Caplio Pro available as a monthly or yearly subscription after the trial.",
-      availability: "https://schema.org/InStock",
-    },
+    offers: [
+      {
+        "@type": "Offer",
+        name: "7-day free trial",
+        price: "0",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+      },
+      {
+        "@type": "Offer",
+        name: "Caplio Pro Monthly",
+        price: "2.99",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+      },
+      {
+        "@type": "Offer",
+        name: "Caplio Pro Yearly",
+        price: "29.99",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+      },
+    ],
     featureList: [
       "On-device OCR for screenshots and images",
       "Menu bar quick search",

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { pricingDisclaimer } from "@/lib/site";
 
 export function PricingTeaser() {
   return (
@@ -16,9 +17,9 @@ export function PricingTeaser() {
             continue using Caplio.
           </p>
           <p className="mt-3 text-sm text-muted">
-            Caplio Pro is available as a monthly or yearly subscription after
-            your trial ends.
+            Caplio Pro is $2.99/month or $29.99/year after your trial ends.
           </p>
+          <p className="mt-2 text-xs text-muted">{pricingDisclaimer}</p>
           <div className="mt-8">
             <Button href="/pricing" variant="primary">
               View pricing
