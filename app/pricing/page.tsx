@@ -15,14 +15,14 @@ export default function PricingPage() {
             Simple pricing
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted">
-            Your data stays safely on your Mac. Subscribe after the trial to
-            continue using {siteConfig.name}.
+            Your data stays safely on your Mac. Choose a subscription or
+            Lifetime after your trial to continue using Caplio Pro.
           </p>
         </div>
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="mx-auto grid max-w-4xl gap-8 px-6 md:grid-cols-2">
+        <div className="mx-auto grid max-w-6xl gap-8 px-6 md:grid-cols-3">
           {pricingPlans.map((plan) => (
             <div
               key={plan.name}
@@ -32,9 +32,9 @@ export default function PricingPage() {
                   : "border-border bg-surface"
               }`}
             >
-              {plan.highlighted && (
+              {plan.badge && (
                 <p className="mb-4 text-xs font-medium uppercase tracking-wider text-accent">
-                  Recommended
+                  {plan.badge}
                 </p>
               )}
               <h2 className="text-2xl font-semibold">{plan.name}</h2>
@@ -108,6 +108,16 @@ export default function PricingPage() {
                 No. Caplio includes a 7-day local trial that starts on your Mac.
                 It is managed by Caplio and is not an App Store introductory
                 offer.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-medium">What is Lifetime?</dt>
+              <dd className="mt-2 text-sm leading-relaxed text-muted">
+                Lifetime is a one-time $69.99 purchase that unlocks Caplio Pro
+                without a recurring subscription. If you already have an active
+                subscription, purchasing Lifetime does not automatically cancel
+                it. Manage or cancel that subscription through your Apple
+                Account to avoid future renewals.
               </dd>
             </div>
             <div>

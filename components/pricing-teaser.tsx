@@ -13,11 +13,11 @@ export function PricingTeaser() {
             Try free for 7 days on your Mac
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted">
-            Your data stays safely on your Mac. Subscribe after the trial to
-            continue using Caplio.
+            Your data stays safely on your Mac. Choose a subscription or
+            Lifetime after your trial to continue using Caplio Pro.
           </p>
           <p className="mt-3 text-sm text-muted">
-            Caplio Pro is $2.99/month or $29.99/year after your trial ends.
+            Caplio Pro is $2.99/month, $29.99/year, or $69.99 Lifetime.
           </p>
           <p className="mt-2 text-xs text-muted">{pricingDisclaimer}</p>
           <div className="mt-8">

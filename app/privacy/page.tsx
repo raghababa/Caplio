@@ -16,8 +16,8 @@ const sections = [
   {
     title: "Data stored on your Mac",
     content: [
-      `${siteConfig.name} stores your screenshot library, thumbnails, OCR text, search index, and app settings locally on your Mac, typically in your user Library folder.`,
-      "Caplio does not upload your screenshots or OCR results to our servers for processing, analysis, or storage.",
+      `${siteConfig.name} stores your library, thumbnails, OCR text, search index, and app settings locally on your Mac, typically in your user Library folder.`,
+      "Caplio does not upload your screenshots, images, or OCR results to our servers for processing, analysis, or storage.",
     ],
   },
   {
@@ -37,8 +37,8 @@ const sections = [
   {
     title: "Your data stays on your Mac",
     content: [
-      "Your data stays safely on your Mac. Subscribe after the trial to continue using Caplio.",
-      "If you stop subscribing, your existing library remains on your Mac. New screenshots may not be indexed until you resubscribe.",
+      "Your data stays safely on your Mac. Choose a subscription or Lifetime after your trial to continue using Caplio Pro.",
+      "If a subscription ends or you do not purchase Caplio Pro, your existing library remains on your Mac. New screenshots and images may not be indexed until you have an active Caplio Pro plan.",
     ],
   },
   {
@@ -52,7 +52,7 @@ const sections = [
     title: "Analytics and tracking",
     content: [
       "This website does not use third-party analytics or advertising trackers.",
-      "The Caplio app is designed to operate without sending your screenshot content to third-party analytics services.",
+      "The Caplio app is designed to operate without sending your screenshot or image content to third-party analytics services.",
     ],
   },
   {

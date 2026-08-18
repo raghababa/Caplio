@@ -30,7 +30,7 @@ export const pages = {
     path: "/pricing",
     title: "Pricing",
     description:
-      "Try Caplio free for 7 days on your Mac. Caplio Pro is $2.99/month or $29.99/year. Prices shown in USD and may vary by region.",
+      "Try Caplio free for 7 days on your Mac. Caplio Pro is $2.99/month, $29.99/year, or $69.99 Lifetime. Prices shown in USD and may vary by region.",
   },
   privacy: {
     path: "/privacy",
@@ -42,7 +42,7 @@ export const pages = {
     path: "/terms",
     title: "Terms of Use",
     description:
-      "Terms of use for Caplio, the macOS app for finding and organizing screenshots with on-device OCR.",
+      "Terms of use for Caplio, the macOS app for finding and organizing screenshots and images with on-device OCR.",
   },
   support: {
     path: "/support",
@@ -79,11 +79,11 @@ export const valueBeats = [
 export const features = [
   {
     id: "ocr",
-    title: "Find text inside any screenshot",
+    title: "Find text inside any image",
     description:
-      "Search words, numbers, URLs, and supported languages inside your images.",
+      "Search words, numbers, URLs, and supported languages inside your screenshots and images.",
     detail:
-      "Caplio uses Apple Vision on your Mac to read text from screenshots with high-quality on-device recognition.",
+      "Caplio uses Apple Vision on your Mac to read text from screenshots and images with high-quality on-device recognition.",
     image: "/screenshots/ocr.png",
     imageAlt: "Caplio OCR search results",
   },
@@ -91,9 +91,9 @@ export const features = [
     id: "menubar",
     title: "Quick search from the menu bar",
     description:
-      "Recent shots, full-text search, and processing status without opening a window.",
+      "Recent images, full-text search, and processing status without opening a window.",
     detail:
-      "Caplio lives in your menu bar so you can jump to any screenshot the moment you need it.",
+      "Caplio lives in your menu bar so you can jump to any screenshot or image the moment you need it.",
     image: "/screenshots/search.png",
     imageAlt: "Caplio menu bar search",
   },
@@ -103,7 +103,7 @@ export const features = [
     description:
       "Timeline browsing with categories, thumbnails, and detail views for every indexed image.",
     detail:
-      "Scroll through your screenshot history by date, filter by category, and open any image in full detail.",
+      "Scroll through your image history by date, filter by category, and open any image in full detail.",
     image: "/screenshots/timeline.png",
     imageAlt: "Caplio timeline library view",
   },
@@ -113,7 +113,7 @@ export const features = [
     description:
       "Optionally organize files by date or category, with move previews and restore history.",
     detail:
-      "Keep files where they are, or let Caplio sort new screenshots into a structured folder tree, always with undo.",
+      "Keep files where they are, or let Caplio sort new screenshots and images into a structured folder tree, always with undo.",
     image: "/screenshots/organize.png",
     imageAlt: "Caplio file organization",
   },
@@ -127,7 +127,7 @@ export const privacyPoints = [
   },
   {
     title: "Your Mac, your library",
-    description: "Your data stays safely on your Mac. Subscribe after the trial to continue using Caplio.",
+    description: "Your data stays safely on your Mac. Choose a subscription or Lifetime after your trial to continue using Caplio Pro.",
   },
   {
     title: "Minimal network use",
@@ -142,9 +142,10 @@ export const pricingDisclaimer =
 export const pricingPlans = [
   {
     name: "Free trial",
+    badge: null,
     prices: [{ amount: "7 days", period: "on your Mac" }],
     description:
-      "Try every feature during onboarding. Connect a folder, scan screenshots, and explore the full library.",
+      "Try every feature during onboarding. Connect a folder, scan screenshots and images, and explore the full library.",
     features: [
       "Full access to all features",
       "On-device OCR and search",
@@ -156,18 +157,35 @@ export const pricingPlans = [
   },
   {
     name: "Caplio Pro",
+    badge: "Subscription",
     prices: [
       { amount: "$2.99", period: "/month" },
       { amount: "$29.99", period: "/year" },
     ],
     description:
-      "Keep processing new screenshots and using search and timeline after your trial ends.",
+      "Keep processing new screenshots and images, and keep using search and timeline after your trial ends.",
     features: [
-      "Ongoing screenshot indexing",
+      "Ongoing image indexing",
       "Full-text search",
       "Timeline browsing",
       "Optional file organization",
       "Restore purchases on same Apple Account",
+    ],
+    cta: "Download on the Mac App Store",
+    highlighted: false,
+  },
+  {
+    name: "Lifetime",
+    badge: "Pay once",
+    prices: [{ amount: "$69.99", period: "one-time" }],
+    description:
+      "Unlock Caplio Pro with a one-time purchase. No recurring subscription.",
+    features: [
+      "All Caplio Pro features",
+      "Ongoing image indexing",
+      "Full-text search",
+      "Timeline browsing",
+      "Optional file organization",
     ],
     cta: "Download on the Mac App Store",
     highlighted: true,

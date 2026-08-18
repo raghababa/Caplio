@@ -79,6 +79,13 @@ export function getSoftwareApplicationJsonLd() {
         priceCurrency: "USD",
         availability: "https://schema.org/InStock",
       },
+      {
+        "@type": "Offer",
+        name: "Caplio Lifetime",
+        price: "69.99",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+      },
     ],
     featureList: [
       "On-device OCR for screenshots and images",
