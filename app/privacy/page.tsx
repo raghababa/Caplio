@@ -58,7 +58,7 @@ const sections = [
   {
     title: "Contact",
     content: [
-      `For privacy questions about ${siteConfig.name}, contact us through the support channel listed on the Mac App Store.`,
+      `For privacy questions about ${siteConfig.name}, visit our Support page or contact us through the Mac App Store.`,
     ],
   },
   {
@@ -101,6 +101,10 @@ export default function PrivacyPage() {
 
         <p className="mt-12 text-sm text-muted">
           See also our{" "}
+          <Link href="/support" className="text-accent hover:underline">
+            Support
+          </Link>{" "}
+          page and{" "}
           <Link href="/terms" className="text-accent hover:underline">
             Terms of Use
           </Link>

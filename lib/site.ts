@@ -43,12 +43,18 @@ export const pages = {
     description:
       "Terms of use for Caplio, the macOS app for finding and organizing screenshots with on-device OCR.",
   },
+  support: {
+    path: "/support",
+    title: "Support",
+    description:
+      "Get help with Caplio on Mac. Trial, subscriptions, OCR search, folders, restore purchases, and how to contact support.",
+  },
 } as const;
 
 export const navLinks = [
   { href: "/#features", label: "Features" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/privacy", label: "Privacy" },
+  { href: "/support", label: "Support" },
 ];
 
 export const features = [

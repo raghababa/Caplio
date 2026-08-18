@@ -1,12 +1,6 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site";
 
-const footerLinks = [
-  { href: "/pricing", label: "Pricing" },
-  { href: "/privacy", label: "Privacy" },
-  { href: "/terms", label: "Terms" },
-];
-
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-surface">
@@ -44,6 +38,14 @@ export function SiteFooter() {
                   Pricing
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/support"
+                  className="text-sm text-foreground/80 transition-colors hover:text-foreground"
+                >
+                  Support
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -52,16 +54,22 @@ export function SiteFooter() {
               Legal
             </p>
             <ul className="space-y-2">
-              {footerLinks.slice(1).map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-foreground/80 transition-colors hover:text-foreground"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="/privacy"
+                  className="text-sm text-foreground/80 transition-colors hover:text-foreground"
+                >
+                  Privacy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/terms"
+                  className="text-sm text-foreground/80 transition-colors hover:text-foreground"
+                >
+                  Terms
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
