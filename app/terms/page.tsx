@@ -23,7 +23,7 @@ const sections = [
   {
     title: "Free trial and subscriptions",
     content: [
-      `${siteConfig.name} offers a 7-day free trial on your Mac. After the trial, a Caplio Pro subscription (monthly or yearly) is required to continue processing new screenshots and using certain features.`,
+      `${siteConfig.name} offers a 7-day free trial on your Mac. After the trial, a Caplio Pro subscription or Lifetime purchase is required to continue processing new screenshots and images and using certain features.`,
       "Subscriptions are managed through the Apple App Store and subject to Apple’s terms. Payment, renewal, cancellation, and refunds are handled by Apple.",
       "Your data stays safely on your Mac. Subscribe after the trial to continue using Caplio.",
     ],

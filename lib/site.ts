@@ -1,8 +1,9 @@
 export const siteConfig = {
   name: "Caplio",
   tagline: "Find and organize any screenshot or image on your Mac",
+  slogan: "Find it. Organize it. Drag it anywhere.",
   description:
-    "Caplio turns folders you choose into a private, searchable visual library with on-device OCR, timeline browsing, and menu bar search.",
+    "Caplio turns your screenshots and images into a private, searchable library on your Mac. Find images by recognized text, organize them your way, and drag anything directly into the apps where you need it.",
   url: "https://caplio.vercel.app",
   appStoreUrl:
     "https://apps.apple.com/us/app/caplio/id6786196613?mt=12",
@@ -47,7 +48,7 @@ export const pages = {
     path: "/support",
     title: "Support",
     description:
-      "Get help with Caplio on Mac. Trial, subscriptions, OCR search, folders, restore purchases, and how to contact support.",
+      "Get help with Caplio on Mac. Trial, subscriptions, Lifetime, OCR search, folders, restore purchases, and how to contact support.",
   },
 } as const;
 
@@ -55,6 +56,24 @@ export const navLinks = [
   { href: "/#features", label: "Features" },
   { href: "/pricing", label: "Pricing" },
   { href: "/support", label: "Support" },
+];
+
+export const valueBeats = [
+  {
+    title: "Find it",
+    description:
+      "Search screenshots and images by text, filename, category, app, or date.",
+  },
+  {
+    title: "Organize it",
+    description:
+      "Build a clean visual library and optionally organize files by date or category.",
+  },
+  {
+    title: "Drag it anywhere",
+    description:
+      "Drag any image straight from Caplio into Mail, Messages, documents, design tools, and other Mac apps.",
+  },
 ];
 
 export const features = [
@@ -148,7 +167,7 @@ export const pricingPlans = [
       "Full-text search",
       "Timeline browsing",
       "Optional file organization",
-      "Restore purchases on same Apple ID",
+      "Restore purchases on same Apple Account",
     ],
     cta: "Download on the Mac App Store",
     highlighted: true,

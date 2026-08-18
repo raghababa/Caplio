@@ -97,22 +97,24 @@ export default function PricingPage() {
             <div>
               <dt className="font-medium">What happens after the trial?</dt>
               <dd className="mt-2 text-sm leading-relaxed text-muted">
-                Your library stays on your Mac. Subscribe to Caplio Pro to keep
-                processing new screenshots and using search and timeline.
+                Your library remains on your Mac. After the trial, you can
+                choose a subscription or a Lifetime purchase to continue using
+                Caplio Pro features.
               </dd>
             </div>
             <div>
               <dt className="font-medium">Is the trial an App Store offer?</dt>
               <dd className="mt-2 text-sm leading-relaxed text-muted">
-                No. Caplio offers a 7-day free trial on your Mac during
-                onboarding. After that, subscribe through the Mac App Store.
+                No. Caplio includes a 7-day local trial that starts on your Mac.
+                It is managed by Caplio and is not an App Store introductory
+                offer.
               </dd>
             </div>
             <div>
               <dt className="font-medium">Can I restore a purchase?</dt>
               <dd className="mt-2 text-sm leading-relaxed text-muted">
-                Yes. Use Restore Purchases in the app if you already subscribed
-                with the same Apple ID.
+                Yes. Use Restore Purchases in Caplio if you previously purchased
+                Caplio Pro with the same Apple Account.
               </dd>
             </div>
           </dl>

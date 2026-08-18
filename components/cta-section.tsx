@@ -8,10 +8,11 @@ export function CtaSection() {
         <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
           Get {siteConfig.name} on your Mac
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-lg text-muted">
-          A private, searchable visual library for your Mac with on-device OCR,
-          timeline browsing, and menu bar search.
-        </p>
+          <p className="mx-auto mt-4 max-w-xl text-lg text-muted">
+            A private, searchable library for screenshots and images on your
+            Mac. Find what you need, organize it your way, and drag it into the
+            apps where you work.
+          </p>
         <div className="mt-8">
           <Button href={siteConfig.appStoreUrl}>
             Download on the Mac App Store

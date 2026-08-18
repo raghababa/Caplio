@@ -1,6 +1,7 @@
 import { siteConfig } from "@/lib/site";
 import { Button } from "@/components/ui/button";
 import { HeroMedia } from "@/components/hero-media";
+import { ValueBeats } from "@/components/value-beats";
 
 export function Hero() {
   return (
@@ -17,21 +18,26 @@ export function Hero() {
             {siteConfig.tagline}
           </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
+          <p className="mt-5 text-xl font-medium tracking-tight text-foreground/80 md:text-2xl">
+            {siteConfig.slogan}
+          </p>
+
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted">
             {siteConfig.description}
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button href={siteConfig.appStoreUrl} className="min-w-[180px]">
-              Download for Mac
+            <Button href={siteConfig.appStoreUrl} className="min-w-[220px]">
+              Download on the Mac App Store
             </Button>
-            <Button href="/#features" variant="secondary">
-              Explore features
+            <Button href="#watch" variant="secondary">
+              Watch how Caplio works
             </Button>
           </div>
         </div>
 
         <HeroMedia />
+        <ValueBeats />
       </div>
     </section>
   );

@@ -32,7 +32,7 @@ export function HeroMedia() {
   }, [reduceMotion]);
 
   return (
-    <div className="relative mx-auto mt-16 max-w-5xl px-2">
+    <div id="watch" className="relative mx-auto mt-16 max-w-5xl scroll-mt-24 px-2">
       <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-2xl shadow-black/10 ring-1 ring-black/5">
         <div className="relative aspect-video bg-[#f7f6f3]">
           {!reduceMotion && videoAvailable ? (
