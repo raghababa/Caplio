@@ -113,7 +113,7 @@ export default function PricingPage() {
             <div>
               <dt className="font-medium">What is Lifetime?</dt>
               <dd className="mt-2 text-sm leading-relaxed text-muted">
-                Lifetime is a one-time $69.99 purchase that unlocks Caplio Pro
+                Lifetime is a one-time $29.99 purchase that unlocks Caplio Pro
                 without a recurring subscription. If you already have an active
                 subscription, purchasing Lifetime does not automatically cancel
                 it. Manage or cancel that subscription through your Apple

@@ -17,7 +17,7 @@ export function PricingTeaser() {
             Lifetime after your trial to continue using Caplio Pro.
           </p>
           <p className="mt-3 text-sm text-muted">
-            Caplio Pro is $2.99/month, $29.99/year, or $69.99 Lifetime.
+            Caplio Pro is $1.99/month, $9.99/year, or $29.99 Lifetime.
           </p>
           <p className="mt-2 text-xs text-muted">{pricingDisclaimer}</p>
           <div className="mt-8">

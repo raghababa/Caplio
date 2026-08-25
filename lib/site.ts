@@ -30,7 +30,7 @@ export const pages = {
     path: "/pricing",
     title: "Pricing",
     description:
-      "Try Caplio free for 7 days on your Mac. Caplio Pro is $2.99/month, $29.99/year, or $69.99 Lifetime. Prices shown in USD and may vary by region.",
+      "Try Caplio free for 7 days on your Mac. Caplio Pro is $1.99/month, $9.99/year, or $29.99 Lifetime. Prices shown in USD and may vary by region.",
   },
   privacy: {
     path: "/privacy",
@@ -159,8 +159,8 @@ export const pricingPlans = [
     name: "Caplio Pro",
     badge: "Subscription",
     prices: [
-      { amount: "$2.99", period: "/month" },
-      { amount: "$29.99", period: "/year" },
+      { amount: "$1.99", period: "/month" },
+      { amount: "$9.99", period: "/year" },
     ],
     description:
       "Keep processing new screenshots and images, and keep using search and timeline after your trial ends.",
@@ -177,7 +177,7 @@ export const pricingPlans = [
   {
     name: "Lifetime",
     badge: "Pay once",
-    prices: [{ amount: "$69.99", period: "one-time" }],
+    prices: [{ amount: "$29.99", period: "one-time" }],
     description:
       "Unlock Caplio Pro with a one-time purchase. No recurring subscription.",
     features: [
