@@ -105,3 +105,21 @@ export function getFaqPageJsonLd(faqs: FaqItem[] = productFaqs) {
     })),
   };
 }
+
+const homepageFaqQuestions = [
+  "What is Caplio?",
+  "What does Caplio do?",
+  "Is Caplio private?",
+  "Does Caplio only support screenshots?",
+  "Does Caplio move my original files?",
+  "Does Caplio have a free trial?",
+  "Where can I download Caplio?",
+] as const;
+
+export const homepageFaqs: FaqItem[] = homepageFaqQuestions.map((question) => {
+  const faq = productFaqs.find((item) => item.question === question);
+  if (!faq) {
+    throw new Error(`Missing homepage FAQ: ${question}`);
+  }
+  return faq;
+});
