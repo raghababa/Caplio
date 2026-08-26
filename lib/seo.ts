@@ -45,54 +45,23 @@ export function getSoftwareApplicationJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: siteConfig.name,
-    applicationCategory: "UtilitiesApplication",
+    name: "Caplio",
+    alternateName: "Caplio for Mac",
+    url: "https://caplio.vercel.app/",
+    applicationCategory: "ProductivityApplication",
     operatingSystem: "macOS",
-    description: siteConfig.description,
-    url: siteConfig.url,
-    downloadUrl: siteConfig.appStoreUrl,
-    image: `${siteConfig.url}/icon.png`,
-    screenshot: [
-      `${siteConfig.url}/screenshots/timeline.png`,
-      `${siteConfig.url}/screenshots/ocr.png`,
-      `${siteConfig.url}/screenshots/search.png`,
-    ],
-    offers: [
-      {
-        "@type": "Offer",
-        name: "7-day free trial",
-        price: "0",
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
-      },
-      {
-        "@type": "Offer",
-        name: "Caplio Pro Monthly",
-        price: "1.99",
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
-      },
-      {
-        "@type": "Offer",
-        name: "Caplio Pro Yearly",
-        price: "9.99",
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
-      },
-      {
-        "@type": "Offer",
-        name: "Caplio Lifetime",
-        price: "29.99",
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
-      },
-    ],
+    description:
+      "Caplio is a private image and screenshot organizer for Mac. It indexes images from folders you choose, uses on-device OCR to make text inside images searchable, provides timeline browsing and search, and can optionally organize files on disk.",
+    downloadUrl: "https://apps.apple.com/us/app/caplio/id6786196613",
     featureList: [
-      "On-device OCR for screenshots and images",
-      "Menu bar quick search",
+      "Search screenshots and images",
+      "On-device OCR",
+      "Search recognized text",
       "Timeline browsing",
-      "Optional file organization by date or category",
-      "Private local processing",
+      "Image organization",
+      "Drag and drop images into other Mac apps",
+      "Local-first processing",
+      "No cloud OCR or remote AI processing",
     ],
   };
 }
@@ -104,11 +73,5 @@ export function getWebSiteJsonLd() {
     name: siteConfig.name,
     url: siteConfig.url,
     description: siteConfig.description,
-    publisher: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: siteConfig.url,
-      logo: `${siteConfig.url}/icon.png`,
-    },
   };
 }

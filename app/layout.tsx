@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 import { JsonLd } from "@/components/json-ld";
-import {
-  getSoftwareApplicationJsonLd,
-  getWebSiteJsonLd,
-} from "@/lib/seo";
+import { getWebSiteJsonLd } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 const geistSans = Geist({
@@ -80,7 +77,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-background text-foreground">
         <JsonLd data={getWebSiteJsonLd()} />
-        <JsonLd data={getSoftwareApplicationJsonLd()} />
         {children}
       </body>
     </html>

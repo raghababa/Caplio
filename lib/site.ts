@@ -48,7 +48,7 @@ export const pages = {
     path: "/support",
     title: "Support",
     description:
-      "Get help with Caplio on Mac. Trial, subscriptions, Lifetime, OCR search, folders, restore purchases, and how to contact support.",
+      "Caplio FAQ and support. Local-first Mac app for searching and organizing screenshots and images with on-device OCR. Privacy, trial, download, and help.",
   },
 } as const;
 
@@ -110,10 +110,9 @@ export const features = [
   {
     id: "organize",
     title: "Organize on your terms",
-    description:
-      "Optionally organize files by date or category, with move previews and restore history.",
+    description: "Your files stay where they are.",
     detail:
-      "Keep files where they are, or let Caplio sort new screenshots and images into a structured folder tree, always with undo.",
+      "By default, Caplio indexes images directly from the folders you choose, without importing duplicate copies into a separate library. If you enable organization, Caplio can optionally organize your original files by date or category.",
     image: "/screenshots/organize.png",
     imageAlt: "Caplio file organization",
   },
