@@ -6,11 +6,13 @@ export const siteConfig = {
     "Caplio turns your screenshots and images into a private, searchable library on your Mac. Find images by recognized text, organize them your way, and drag anything directly into the apps where you need it.",
   url: "https://caplio.vercel.app",
   appStoreUrl:
-    "https://apps.apple.com/us/app/caplio/id6786196613?mt=12",
-  appStoreBadgeUrl:
-    "https://apps.apple.com/us/app/caplio/id6786196613?mt=12&itscg=30200&itsct=apps_box_badge&mttnsubad=6786196613",
+    "https://apps.apple.com/app/apple-store/id6786196613?pt=127883050&ct=website&mt=8",
   appStoreBadgeImageUrl:
     "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1786579200",
+  productHuntUrl:
+    "https://www.producthunt.com/products/caplio/launches/caplio?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-caplio",
+  productHuntBadgeImageUrl:
+    "https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1225018&theme=dark&t=1789045810262",
   keywords: [
     "Caplio",
     "screenshot search Mac",

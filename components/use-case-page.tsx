@@ -39,7 +39,7 @@ export function UseCasePage({ useCase }: UseCasePageProps) {
           operatingSystem: "macOS",
           applicationCategory: "ProductivityApplication",
           url: "https://caplio.vercel.app/",
-          downloadUrl: "https://apps.apple.com/us/app/caplio/id6786196613",
+          downloadUrl: siteConfig.appStoreUrl,
         },
       },
       {

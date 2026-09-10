@@ -7,7 +7,7 @@ type AppStoreBadgeProps = {
 export function AppStoreBadge({ className = "" }: AppStoreBadgeProps) {
   return (
     <a
-      href={siteConfig.appStoreBadgeUrl}
+      href={siteConfig.appStoreUrl}
       target="_blank"
       rel="noopener noreferrer"
       className={`inline-block ${className}`.trim()}

@@ -52,7 +52,7 @@ export function getSoftwareApplicationJsonLd() {
     operatingSystem: "macOS",
     description:
       "Caplio is a private image and screenshot organizer for Mac. It indexes images from folders you choose, uses on-device OCR to make text inside images searchable, provides timeline browsing and search, and can optionally organize files on disk.",
-    downloadUrl: "https://apps.apple.com/us/app/caplio/id6786196613",
+    downloadUrl: siteConfig.appStoreUrl,
     featureList: [
       "Search screenshots and images",
       "On-device OCR",

@@ -1,5 +1,6 @@
 import { siteConfig } from "@/lib/site";
 import { AppStoreBadge } from "@/components/app-store-badge";
+import { ProductHuntBadge } from "@/components/product-hunt-badge";
 import { Button } from "@/components/ui/button";
 import { HeroMedia } from "@/components/hero-media";
 import { ValueBeats } from "@/components/value-beats";
@@ -11,9 +12,12 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-6xl px-6 pb-16 pt-20 md:pb-24 md:pt-28">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-4 inline-flex items-center rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted">
-            Available on the Mac App Store
-          </p>
+          <div className="mb-5 flex flex-col items-center justify-center gap-3 sm:mb-6 sm:flex-row sm:flex-wrap sm:gap-4">
+            <p className="inline-flex items-center rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted">
+              Available on the Mac App Store
+            </p>
+            <ProductHuntBadge />
+          </div>
 
           <h1 className="text-4xl font-semibold tracking-tight text-foreground md:text-6xl md:leading-[1.08]">
             {siteConfig.tagline}
