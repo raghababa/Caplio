@@ -13,14 +13,14 @@ export function ProductHuntBadge({ className = "" }: ProductHuntBadgeProps) {
       className={`inline-block rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${className}`.trim()}
       aria-label="Caplio featured on Product Hunt"
     >
-      {/* Official Product Hunt Featured badge */}
+      {/* Official Product Hunt Featured badge (Neutral) */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={siteConfig.productHuntBadgeImageUrl}
-        alt="Caplio featured on Product Hunt"
+        alt="Caplio - Find, organize, and reuse every image on your Mac | Product Hunt"
         width={250}
         height={54}
-        className="h-[40px] w-auto object-contain align-middle sm:h-[54px] sm:w-[250px]"
+        className="h-auto w-[180px] object-contain align-middle sm:w-[215px]"
       />
     </a>
   );

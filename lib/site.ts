@@ -10,9 +10,9 @@ export const siteConfig = {
   appStoreBadgeImageUrl:
     "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1786579200",
   productHuntUrl:
-    "https://www.producthunt.com/products/caplio/launches/caplio?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-caplio",
+    "https://www.producthunt.com/products/caplio?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-caplio",
   productHuntBadgeImageUrl:
-    "https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1225018&theme=dark&t=1789045810262",
+    "https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1225018&theme=neutral&t=1789046498115",
   keywords: [
     "Caplio",
     "screenshot search Mac",
