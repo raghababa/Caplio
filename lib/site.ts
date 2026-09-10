@@ -99,8 +99,10 @@ export const features = [
     description:
       "Multiple captures of the same screen can quickly clutter your library. Caplio brings visually similar images and exact copies together so you can review them side by side and decide what you want to keep.",
     detail: "Nothing is deleted automatically. You decide what stays.",
-    image: null,
-    imageAlt: "Caplio Similar Images review",
+    image: "/screenshots/similar.jpg",
+    imageAlt:
+      "Caplio Exact Copies review showing duplicate screenshots side by side",
+    href: "/use-cases/find-similar-images-and-duplicate-screenshots-on-mac",
   },
   {
     id: "timeline",

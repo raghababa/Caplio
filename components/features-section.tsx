@@ -19,6 +19,29 @@ export function FeaturesSection() {
         <div className="flex flex-col gap-24 md:gap-32">
           {features.map((feature, index) => {
             const reversed = index % 2 === 1;
+            const media = (
+              <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-xl shadow-black/5 ring-1 ring-black/5 transition-opacity group-hover:opacity-95">
+                {feature.image ? (
+                  <Image
+                    src={feature.image}
+                    alt={feature.imageAlt}
+                    width={1200}
+                    height={750}
+                    className="w-full"
+                  />
+                ) : (
+                  <div className="flex aspect-[16/10] flex-col items-center justify-center gap-3 bg-gradient-to-br from-surface to-white px-8 text-center">
+                    <p className="max-w-xs text-base font-medium tracking-tight text-foreground">
+                      Review similar captures. Keep what matters.
+                    </p>
+                    <p className="max-w-sm text-sm leading-relaxed text-muted">
+                      Caplio groups visually similar images and exact copies for
+                      review. Nothing is deleted automatically.
+                    </p>
+                  </div>
+                )}
+              </div>
+            );
 
             return (
               <div
@@ -37,39 +60,19 @@ export function FeaturesSection() {
                   <p className="text-sm leading-relaxed text-muted/80">
                     {feature.detail}
                   </p>
-                  {feature.id === "similar" && (
-                    <p className="pt-1 text-sm">
-                      <Link
-                        href="/use-cases/find-similar-images-and-duplicate-screenshots-on-mac"
-                        className="font-medium text-accent hover:underline"
-                      >
-                        Learn more about Similar Images
-                      </Link>
-                    </p>
-                  )}
                 </div>
 
-                <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-xl shadow-black/5 ring-1 ring-black/5">
-                  {feature.image ? (
-                    <Image
-                      src={feature.image}
-                      alt={feature.imageAlt}
-                      width={1200}
-                      height={750}
-                      className="w-full"
-                    />
-                  ) : (
-                    <div className="flex aspect-[16/10] flex-col items-center justify-center gap-3 bg-gradient-to-br from-surface to-white px-8 text-center">
-                      <p className="max-w-xs text-base font-medium tracking-tight text-foreground">
-                        Review similar captures. Keep what matters.
-                      </p>
-                      <p className="max-w-sm text-sm leading-relaxed text-muted">
-                        Caplio groups visually similar images and exact copies
-                        for review. Nothing is deleted automatically.
-                      </p>
-                    </div>
-                  )}
-                </div>
+                {"href" in feature && feature.href ? (
+                  <Link
+                    href={feature.href}
+                    className="group block rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                    aria-label={`${feature.title}. Open use case page.`}
+                  >
+                    {media}
+                  </Link>
+                ) : (
+                  media
+                )}
               </div>
             );
           })}
