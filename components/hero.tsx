@@ -1,4 +1,5 @@
 import { siteConfig } from "@/lib/site";
+import { AppStoreBadge } from "@/components/app-store-badge";
 import { Button } from "@/components/ui/button";
 import { HeroMedia } from "@/components/hero-media";
 import { ValueBeats } from "@/components/value-beats";
@@ -26,10 +27,8 @@ export function Hero() {
             {siteConfig.description}
           </p>
 
-          <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button href={siteConfig.appStoreUrl} className="min-w-[220px]">
-              Download on the Mac App Store
-            </Button>
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-center">
+            <AppStoreBadge />
             <Button href="#watch" variant="secondary">
               Watch how Caplio works
             </Button>

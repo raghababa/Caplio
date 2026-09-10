@@ -7,6 +7,10 @@ export const siteConfig = {
   url: "https://caplio.vercel.app",
   appStoreUrl:
     "https://apps.apple.com/us/app/caplio/id6786196613?mt=12",
+  appStoreBadgeUrl:
+    "https://apps.apple.com/us/app/caplio/id6786196613?mt=12&itscg=30200&itsct=apps_box_badge&mttnsubad=6786196613",
+  appStoreBadgeImageUrl:
+    "https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1786579200",
   keywords: [
     "Caplio",
     "screenshot search Mac",
