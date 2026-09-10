@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: "Find and organize any screenshot or image on your Mac",
   slogan: "Find it. Organize it. Drag it anywhere.",
   description:
-    "Caplio turns your screenshots and images into a private, searchable library on your Mac. Find images by recognized text, organize them your way, and drag anything directly into the apps where you need it.",
+    "Caplio turns your screenshots and images into a private, searchable library on your Mac. Search by recognized text, find similar images and exact copies, organize your collection, and drag anything directly into the apps where you need it.",
   url: "https://caplio.vercel.app",
   appStoreUrl:
     "https://apps.apple.com/app/apple-store/id6786196613?pt=127883050&ct=website&mt=8",
@@ -94,14 +94,13 @@ export const features = [
     imageAlt: "Caplio OCR search results",
   },
   {
-    id: "menubar",
-    title: "Quick search from the menu bar",
+    id: "similar",
+    title: "Find similar images and exact copies",
     description:
-      "Recent images, full-text search, and processing status without opening a window.",
-    detail:
-      "Caplio lives in your menu bar so you can jump to any screenshot or image the moment you need it.",
-    image: "/screenshots/search.png",
-    imageAlt: "Caplio menu bar search",
+      "Multiple captures of the same screen can quickly clutter your library. Caplio brings visually similar images and exact copies together so you can review them side by side and decide what you want to keep.",
+    detail: "Nothing is deleted automatically. You decide what stays.",
+    image: null,
+    imageAlt: "Caplio Similar Images review",
   },
   {
     id: "timeline",

@@ -49,6 +49,7 @@ export const useCases: UseCase[] = [
     relatedSlugs: [
       "organize-screenshots-automatically-on-mac",
       "search-text-inside-screenshots-on-mac",
+      "find-similar-images-and-duplicate-screenshots-on-mac",
       "screenshot-manager-without-uploading-images",
     ],
   },
@@ -83,6 +84,7 @@ export const useCases: UseCase[] = [
     ],
     relatedSlugs: [
       "local-ocr-for-mac",
+      "find-similar-images-and-duplicate-screenshots-on-mac",
       "search-screenshots-by-date",
       "screenshot-organizer-for-mac",
     ],
@@ -153,6 +155,7 @@ export const useCases: UseCase[] = [
     ],
     relatedSlugs: [
       "screenshot-organizer-for-mac",
+      "find-similar-images-and-duplicate-screenshots-on-mac",
       "search-screenshots-by-date",
       "screenshot-manager-without-uploading-images",
     ],
@@ -224,7 +227,44 @@ export const useCases: UseCase[] = [
     relatedSlugs: [
       "local-ocr-for-mac",
       "screenshot-organizer-for-mac",
+      "find-similar-images-and-duplicate-screenshots-on-mac",
       "search-text-inside-screenshots-on-mac",
+    ],
+  },
+  {
+    slug: "find-similar-images-and-duplicate-screenshots-on-mac",
+    title: "Find similar images and duplicate screenshots on Mac",
+    metaTitle: "Find Similar Images & Duplicate Screenshots on Mac",
+    metaDescription:
+      "Find visually similar images, repeated screenshots, and exact copies on your Mac with Caplio. Review related images privately and decide what you want to keep.",
+    eyebrow: "Use case",
+    headline: "Find similar images and duplicate screenshots on Mac",
+    intro: [
+      "Caplio helps you find visually similar images and exact copies inside the folders you choose on your Mac. Similar captures are brought together for review, while you stay in control of what gets kept or removed.",
+      "Nothing is deleted automatically. Caplio never removes images for you.",
+    ],
+    problemTitle: "The problem",
+    problem:
+      "Screenshot and image collections often accumulate repeated captures, slightly different versions of the same screen, crops or visually similar images, and exact copies. Finding these manually becomes difficult as the library grows.",
+    howTitle: "How Caplio helps",
+    how: [
+      "Detect images that appear visually very similar",
+      "Detect exact copies in your chosen folders",
+      "Bring related captures together for review",
+      "Compare images side by side and keep what you want",
+      "Stop a group from being suggested again when you are done with it",
+    ],
+    whyCaplio: [
+      "You stay in control. Caplio never automatically deletes images",
+      "Works with the folders you choose, not a whole-Mac scan",
+      "Pairs with OCR search, timeline browsing, and categories",
+      "Local-first processing with no cloud AI required for this workflow",
+    ],
+    relatedSlugs: [
+      "screenshot-organizer-for-mac",
+      "search-text-inside-screenshots-on-mac",
+      "organize-screenshots-automatically-on-mac",
+      "screenshot-manager-without-uploading-images",
     ],
   },
 ];

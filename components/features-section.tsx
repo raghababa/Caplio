@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { features } from "@/lib/site";
 
 export function FeaturesSection() {
@@ -36,16 +37,38 @@ export function FeaturesSection() {
                   <p className="text-sm leading-relaxed text-muted/80">
                     {feature.detail}
                   </p>
+                  {feature.id === "similar" && (
+                    <p className="pt-1 text-sm">
+                      <Link
+                        href="/use-cases/find-similar-images-and-duplicate-screenshots-on-mac"
+                        className="font-medium text-accent hover:underline"
+                      >
+                        Learn more about Similar Images
+                      </Link>
+                    </p>
+                  )}
                 </div>
 
                 <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-xl shadow-black/5 ring-1 ring-black/5">
-                  <Image
-                    src={feature.image}
-                    alt={feature.imageAlt}
-                    width={1200}
-                    height={750}
-                    className="w-full"
-                  />
+                  {feature.image ? (
+                    <Image
+                      src={feature.image}
+                      alt={feature.imageAlt}
+                      width={1200}
+                      height={750}
+                      className="w-full"
+                    />
+                  ) : (
+                    <div className="flex aspect-[16/10] flex-col items-center justify-center gap-3 bg-gradient-to-br from-surface to-white px-8 text-center">
+                      <p className="max-w-xs text-base font-medium tracking-tight text-foreground">
+                        Review similar captures. Keep what matters.
+                      </p>
+                      <p className="max-w-sm text-sm leading-relaxed text-muted">
+                        Caplio groups visually similar images and exact copies
+                        for review. Nothing is deleted automatically.
+                      </p>
+                    </div>
+                  )}
                 </div>
               </div>
             );
