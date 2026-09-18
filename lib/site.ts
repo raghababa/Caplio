@@ -42,7 +42,7 @@ export const pages = {
     path: "/privacy",
     title: "Privacy Policy",
     description:
-      "Caplio privacy policy. Local image processing, on-device OCR, indexing, and search on your Mac. Internet access may be used for App Store purchases.",
+      "Caplio privacy policy. Your visual library stays on your Mac. Limited anonymous usage analytics via TelemetryDeck. No advertising tracking.",
   },
   terms: {
     path: "/terms",
