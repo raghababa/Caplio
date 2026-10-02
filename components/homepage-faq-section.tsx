@@ -14,8 +14,8 @@ export function HomepageFaqSection() {
             Frequently asked questions
           </h2>
           <p className="mt-4 text-lg text-muted">
-            Clear answers about what Caplio is, how it works, and how your files
-            stay private.
+            Clear answers about free screenshot capture, Capture Sessions,
+            documents, Caplio Pro, and privacy.
           </p>
         </div>
 

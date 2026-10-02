@@ -3,21 +3,25 @@ import { pricingDisclaimer } from "@/lib/site";
 
 export function PricingTeaser() {
   return (
-    <section className="border-t border-border bg-white py-24 md:py-32">
+    <section
+      id="pricing"
+      className="scroll-mt-20 border-t border-border bg-white py-24 md:py-32"
+    >
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl rounded-3xl border border-border bg-surface p-10 text-center md:p-14">
           <p className="text-sm font-medium uppercase tracking-wider text-accent">
-            Pricing
+            Free vs Pro
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-            Try free for 7 days on your Mac
+            Capture screenshots for free. Try Caplio Pro free for 7 days.
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted">
-            Your data stays safely on your Mac. Choose a subscription or
-            Lifetime after your trial to continue using Caplio Pro.
+            Screenshot capture stays free. Caplio Pro unlocks the searchable
+            visual library, on-device OCR search, Similar Images, Document
+            Builder, and advanced file organization.
           </p>
           <p className="mt-3 text-sm text-muted">
-            Caplio Pro is $1.99/month, $9.99/year, or $29.99 Lifetime.
+            Caplio Pro is $0.99/month, $5.99/year, or $9.99 Lifetime (one-time).
           </p>
           <p className="mt-2 text-xs text-muted">{pricingDisclaimer}</p>
           <div className="mt-8">

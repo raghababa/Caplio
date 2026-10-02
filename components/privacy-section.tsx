@@ -6,10 +6,11 @@ export function PrivacySection() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto mb-16 max-w-2xl text-center">
           <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-            Built for privacy
+            Private by design
           </h2>
           <p className="mt-4 text-lg text-muted">
-            Caplio is designed so your visual library stays under your control.
+            Your visual library stays on your Mac. OCR, search indexing, and
+            document processing for your library run locally.
           </p>
         </div>
 

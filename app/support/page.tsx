@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/json-ld";
 import { SiteLayout } from "@/components/site-layout";
 import { getFaqPageJsonLd, productFaqs } from "@/lib/faqs";
 import { createPageMetadata } from "@/lib/seo";
-import { siteConfig } from "@/lib/site";
+import { getSupportMailtoUrl, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = createPageMetadata("support");
 
@@ -19,8 +19,9 @@ export default function SupportPage() {
             Support
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted">
-            Help for {siteConfig.name} on Mac, including privacy, OCR search,
-            file organization, trial, and download.
+            Help for {siteConfig.name} on Mac, including free screenshot
+            capture, Capture Sessions, OCR search, Document Builder, privacy,
+            Caplio Pro trial, and download.
           </p>
         </div>
       </section>
@@ -30,13 +31,27 @@ export default function SupportPage() {
           <div className="rounded-3xl border border-border bg-surface p-8">
             <h2 className="text-xl font-semibold">Contact us</h2>
             <p className="mt-3 text-sm leading-relaxed text-muted">
-              For help with {siteConfig.name}, use the App Store listing or
-              include your macOS version, Caplio version, and a short
-              description of the issue.
+              Need help with Caplio, found a bug, or have a suggestion? We&apos;d
+              love to hear from you.
             </p>
-            <div className="mt-6">
-              <Button href={siteConfig.appStoreUrl}>
-                Open Caplio on the App Store
+            <p className="mt-3 text-sm leading-relaxed text-muted">
+              When reporting a problem, please include your macOS version,
+              Caplio version, and a short description of what happened.
+            </p>
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+              <Button
+                href={getSupportMailtoUrl()}
+                variant="primary"
+                aria-label="Email Caplio support"
+              >
+                Email Support
+              </Button>
+              <Button
+                href={siteConfig.appStoreUrl}
+                variant="secondary"
+                aria-label="View Caplio on the App Store"
+              >
+                View Caplio on the App Store
               </Button>
             </div>
           </div>

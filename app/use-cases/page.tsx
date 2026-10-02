@@ -9,14 +9,14 @@ import { getUseCasePath, useCases } from "@/lib/use-cases";
 export const metadata: Metadata = {
   title: "Use Cases",
   description:
-    "Caplio use cases for Mac: screenshot organizer, search text inside screenshots, local OCR, automatic organization, search by date, and private screenshot management without uploading images.",
+    "Caplio use cases for Mac: screenshot capture, Capture Sessions, search text inside screenshots, local OCR, screenshots to PDF or Word, and private visual workflows.",
   alternates: {
     canonical: "/use-cases",
   },
   openGraph: {
     title: `Use Cases | ${siteConfig.name}`,
     description:
-      "Explore Caplio use cases for searching, organizing, and privately managing screenshots and images on Mac.",
+      "Explore Caplio use cases for capturing, searching, organizing, and turning screenshots into documents on Mac.",
     url: `${siteConfig.url}/use-cases`,
     siteName: siteConfig.name,
     type: "website",
@@ -29,7 +29,7 @@ export default function UseCasesIndexPage() {
     "@type": "CollectionPage",
     name: `Use Cases | ${siteConfig.name}`,
     description:
-      "Caplio use cases for searching, organizing, and privately managing screenshots and images on Mac.",
+      "Caplio use cases for capturing, searching, organizing, and turning screenshots into documents on Mac.",
     url: `${siteConfig.url}/use-cases`,
     hasPart: useCases.map((useCase) => ({
       "@type": "WebPage",
@@ -48,8 +48,9 @@ export default function UseCasesIndexPage() {
             Caplio use cases
           </h1>
           <p className="mt-4 text-lg text-muted">
-            Practical ways Caplio helps you search, organize, and reuse
-            screenshots and images on your Mac — privately, with on-device OCR.
+            Practical ways Caplio helps you capture, keep related work in
+            Sessions, search, organize, and turn screenshots into documents on
+            your Mac — privately, with on-device OCR.
           </p>
         </div>
       </section>

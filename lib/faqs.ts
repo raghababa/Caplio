@@ -7,7 +7,7 @@ export const productFaqs: FaqItem[] = [
   {
     question: "What is Caplio?",
     answer:
-      "Caplio is a local-first macOS app for searching, organizing, and reusing screenshots and images. It uses on-device OCR to make text inside images searchable and stores its library and search data locally on your Mac.",
+      "Caplio is a private visual workflow for macOS: Capture → Sessions → Search → Organize → Create. Capture screenshots, keep related captures in Sessions, search text inside images with on-device OCR, and turn selected captures into PDF or Word documents. Your visual library stays on your Mac.",
   },
   {
     question: "Is Caplio a Mac app?",
@@ -17,7 +17,37 @@ export const productFaqs: FaqItem[] = [
   {
     question: "What does Caplio do?",
     answer:
-      "Caplio indexes screenshots and images from folders you choose, recognizes text inside them using on-device OCR, makes that text searchable, provides timeline browsing, and can optionally organize files by date or category.",
+      "Caplio lets you capture screenshots directly, organize related captures in Capture Sessions, index screenshots and images from folders you choose, search recognized text with on-device OCR, browse a Timeline, find similar images, optionally organize files by Date, Category, or Capture Session, and create PDF or DOCX documents.",
+  },
+  {
+    question: "Can Caplio take screenshots?",
+    answer:
+      "Yes. Caplio can capture an area or the full screen directly using customizable global shortcuts. Screenshot capture is free.",
+  },
+  {
+    question: "Do I need Caplio Pro to take screenshots?",
+    answer:
+      "No. Screenshot capture is free. Caplio Pro unlocks the searchable visual library and advanced organization and document workflows.",
+  },
+  {
+    question: "What are Capture Sessions?",
+    answer:
+      "Capture Sessions help keep related captures from a class, meeting, research task, project, or other activity together. You name Sessions yourself, can revisit them, filter images by Session, and reassign captures when needed.",
+  },
+  {
+    question: "Can Caplio turn screenshots into a PDF?",
+    answer:
+      "Yes. With Document Builder, you can select and reorder images and export a document using Image + Text, Image Only, or Text Only.",
+  },
+  {
+    question: "Can Caplio create Word documents from screenshots?",
+    answer:
+      "Yes. Document Builder supports DOCX as well as PDF.",
+  },
+  {
+    question: "Why does Caplio ask for Screen Recording permission?",
+    answer:
+      "macOS requires Screen Recording permission when Caplio captures the screen. Caplio requests this permission when you explicitly try to capture — not simply because the app launches.",
   },
   {
     question: "Does Caplio only support screenshots?",
@@ -27,12 +57,12 @@ export const productFaqs: FaqItem[] = [
   {
     question: "Is Caplio private?",
     answer:
-      "Caplio is designed to be local-first. Images, OCR processing, and the search index stay on your Mac, and Caplio does not upload your image library to a cloud OCR or remote AI service for analysis.",
+      "Your visual library stays on your Mac. OCR, indexing, and search run on-device. Caplio does not upload your images, OCR text, or search queries for library processing. Caplio may send limited privacy-preserving anonymous usage analytics that do not include library content. See the Privacy Policy for details.",
   },
   {
     question: "Does Caplio upload my screenshots?",
     answer:
-      "Caplio does not upload your screenshots or images to a cloud OCR or remote AI service for analysis. Image processing and OCR are performed locally on your Mac.",
+      "Caplio does not upload your screenshots or images for OCR, search, or remote library processing. Image processing and OCR are performed locally on your Mac.",
   },
   {
     question: "Does Caplio use AI?",
@@ -57,7 +87,7 @@ export const productFaqs: FaqItem[] = [
   {
     question: "Can Caplio organize files automatically?",
     answer:
-      "Caplio provides optional file organization. When enabled, files can be organized by date or category. You can use Caplio's search and library features without enabling file organization.",
+      "Caplio provides optional file organization. When enabled, files can be organized by Date, Category, or Capture Session. You can use Caplio's search and library features without enabling file organization. Changing a Session does not by itself move files on disk.",
   },
   {
     question: "Does Caplio move my original files?",
@@ -87,7 +117,7 @@ export const productFaqs: FaqItem[] = [
   {
     question: "Does Caplio have a free trial?",
     answer:
-      "Yes. Caplio provides a 7-day trial with full app access on the Mac. Current purchase and subscription options are available through the app and Mac App Store.",
+      "Screenshot capture is free. Caplio also provides a 7-day trial of Caplio Pro on your Mac so you can explore the searchable visual library and advanced organization and document workflows. Purchase and subscription options are available through the app and Mac App Store.",
   },
 ];
 
@@ -108,10 +138,11 @@ export function getFaqPageJsonLd(faqs: FaqItem[] = productFaqs) {
 
 const homepageFaqQuestions = [
   "What is Caplio?",
-  "What does Caplio do?",
+  "Can Caplio take screenshots?",
+  "Do I need Caplio Pro to take screenshots?",
+  "What are Capture Sessions?",
+  "Can Caplio turn screenshots into a PDF?",
   "Is Caplio private?",
-  "Does Caplio only support screenshots?",
-  "Does Caplio move my original files?",
   "Does Caplio have a free trial?",
   "Where can I download Caplio?",
 ] as const;

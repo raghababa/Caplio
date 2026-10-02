@@ -6,6 +6,7 @@ import { JsonLd } from "@/components/json-ld";
 import { PricingTeaser } from "@/components/pricing-teaser";
 import { PrivacySection } from "@/components/privacy-section";
 import { SiteLayout } from "@/components/site-layout";
+import { UseCasesTeaser } from "@/components/use-cases-teaser";
 import { getFaqPageJsonLd, homepageFaqs } from "@/lib/faqs";
 import {
   createPageMetadata,
@@ -22,8 +23,9 @@ export default function HomePage() {
       <Hero />
       <FeaturesSection />
       <PrivacySection />
-      <HomepageFaqSection />
       <PricingTeaser />
+      <UseCasesTeaser />
+      <HomepageFaqSection />
       <CtaSection />
     </SiteLayout>
   );

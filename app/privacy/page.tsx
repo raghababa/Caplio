@@ -16,8 +16,8 @@ const sections: PrivacySection[] = [
   {
     title: "Privacy at a Glance",
     content: [
-      `${siteConfig.name} is a local-first macOS app for searching and organizing screenshots and images. Your visual library stays on your Mac.`,
-      "Your images, OCR text, search queries, filenames, folder paths, and document content are not uploaded for analytics or remote processing.",
+      `${siteConfig.name} is a local-first macOS app for capturing screenshots, searching and organizing images, and creating documents. Your visual library stays on your Mac.`,
+      "Your images, OCR text, search queries, filenames, folder paths, Capture Session names, and document content are not uploaded for analytics or remote processing.",
       "Caplio may send limited privacy-preserving usage analytics to TelemetryDeck to help us understand how the product is used and improve the app. Analytics are separate from your library content.",
       "Caplio does not use analytics for advertising, does not use TelemetryDeck for cross-app or cross-website tracking, and does not sell personal data.",
     ],
@@ -39,6 +39,7 @@ const sections: PrivacySection[] = [
         <li>filenames</li>
         <li>file paths</li>
         <li>folder names and folder paths</li>
+        <li>Capture Session names</li>
         <li>document titles</li>
         <li>document text and content</li>
         <li>thumbnails</li>
@@ -99,6 +100,7 @@ const sections: PrivacySection[] = [
         <li>search queries</li>
         <li>filenames</li>
         <li>file or folder paths</li>
+        <li>Capture Session names</li>
         <li>document titles or content</li>
         <li>screenshot or group IDs</li>
         <li>StoreKit transaction IDs</li>
@@ -223,7 +225,7 @@ const sections: PrivacySection[] = [
         <Link href="/support" className="text-accent hover:underline">
           Support
         </Link>{" "}
-        page or contact us through the Mac App Store listing.
+        page and use Email Support.
       </>,
     ],
   },
@@ -233,7 +235,7 @@ export default function PrivacyPage() {
   return (
     <SiteLayout>
       <article className="mx-auto max-w-3xl px-6 py-20 md:py-28">
-        <p className="text-sm text-muted">Last updated: September 18, 2026</p>
+        <p className="text-sm text-muted">Last updated: October 2, 2026</p>
         <h1 className="mt-2 text-4xl font-semibold tracking-tight">
           Privacy Policy
         </h1>

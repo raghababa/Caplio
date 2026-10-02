@@ -1,10 +1,12 @@
 export const siteConfig = {
   name: "Caplio",
-  tagline: "Find and organize any screenshot or image on your Mac",
-  slogan: "Find it. Organize it. Drag it anywhere.",
+  tagline: "Capture it. Find it. Turn it into something useful.",
+  slogan: "Screenshot capture is free.",
   description:
-    "Caplio turns your screenshots and images into a private, searchable library on your Mac. Search by recognized text, find similar images and exact copies, organize your collection, and drag anything directly into the apps where you need it.",
+    "Capture screenshots on your Mac, keep related captures together in Sessions, search text inside screenshots and images, and turn what you collect into PDF or Word documents.",
+  privacyLine: "Your visual library stays on your Mac.",
   url: "https://caplio.vercel.app",
+  supportEmail: "r.aghababa@gmail.com",
   appStoreUrl:
     "https://apps.apple.com/app/apple-store/id6786196613?pt=127883050&ct=website&mt=8",
   appStoreBadgeImageUrl:
@@ -15,16 +17,27 @@ export const siteConfig = {
     "https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1225018&theme=neutral&t=1789046498115",
   keywords: [
     "Caplio",
-    "screenshot search Mac",
-    "OCR screenshots Mac",
-    "find text in screenshots",
-    "Mac screenshot organizer",
-    "on-device OCR",
-    "private screenshot library",
-    "menu bar screenshot search",
-    "macOS screenshot app",
+    "screenshot capture Mac",
+    "screenshot organizer for Mac",
+    "search screenshots on Mac",
+    "search text inside screenshots",
+    "OCR screenshot Mac",
+    "searchable image library",
+    "organize screenshots",
+    "screenshot sessions",
+    "screenshots to PDF",
+    "screenshots to Word",
+    "private screenshot manager",
+    "on-device OCR Mac",
+    "Capture Sessions",
   ],
 };
+
+export function getSupportMailtoUrl(subject = "Caplio Support") {
+  const mailto = new URL(`mailto:${siteConfig.supportEmail}`);
+  mailto.searchParams.set("subject", subject);
+  return mailto.toString();
+}
 
 export const pages = {
   home: {
@@ -36,7 +49,7 @@ export const pages = {
     path: "/pricing",
     title: "Pricing",
     description:
-      "Try Caplio free for 7 days on your Mac. Caplio Pro is $1.99/month, $9.99/year, or $29.99 Lifetime. Prices shown in USD and may vary by region.",
+      "Screenshot capture is free. Try Caplio Pro free for 7 days. Caplio Pro is $0.99/month, $5.99/year, or $9.99 Lifetime (one-time). Prices shown in USD and may vary by region.",
   },
   privacy: {
     path: "/privacy",
@@ -48,13 +61,13 @@ export const pages = {
     path: "/terms",
     title: "Terms of Use",
     description:
-      "Terms of use for Caplio, the macOS app for finding and organizing screenshots and images with on-device OCR.",
+      "Terms of use for Caplio, the macOS app for capturing screenshots, searching images with on-device OCR, and creating documents.",
   },
   support: {
     path: "/support",
     title: "Support",
     description:
-      "Caplio FAQ and support. Local-first Mac app for searching and organizing screenshots and images with on-device OCR. Privacy, trial, download, and help.",
+      "Caplio FAQ and support. Capture screenshots for free, search with on-device OCR, use Capture Sessions, create PDF or Word documents, and get help with Caplio Pro.",
   },
 } as const;
 
@@ -66,32 +79,82 @@ export const navLinks = [
 
 export const valueBeats = [
   {
-    title: "Find it",
+    title: "Capture",
     description:
-      "Search screenshots and images by text, filename, category, app, or date.",
+      "Capture an area or the full screen with customizable global shortcuts. Screenshot capture is free.",
   },
   {
-    title: "Organize it",
+    title: "Sessions",
     description:
-      "Build a clean visual library and optionally organize files by date or category.",
+      "Start a Capture Session for a class, meeting, research task, or project so related captures stay together.",
   },
   {
-    title: "Drag it anywhere",
+    title: "Search & create",
     description:
-      "Drag any image straight from Caplio into Mail, Messages, documents, design tools, and other Mac apps.",
+      "Search text inside screenshots and images, then turn selected captures into PDF or Word documents.",
   },
 ];
 
-export const features = [
+export type Feature = {
+  id: string;
+  title: string;
+  description: string;
+  detail: string;
+  image?: string;
+  imageAlt: string;
+  badge?: string;
+  href?: string;
+  placeholderTitle?: string;
+  placeholderBody?: string;
+};
+
+export const features: Feature[] = [
   {
-    id: "ocr",
-    title: "Find text inside any image",
+    id: "capture",
+    title: "Capture without breaking your flow",
     description:
-      "Search words, numbers, URLs, and supported languages inside your screenshots and images.",
+      "Capture an area or your full screen directly with Caplio. Customizable global shortcuts let you capture without interrupting what you're doing.",
     detail:
-      "Caplio uses Apple Vision on your Mac to read text from screenshots and images with high-quality on-device recognition.",
-    image: "/screenshots/ocr.png",
-    imageAlt: "Caplio OCR search results",
+      "Screenshot capture is free — you do not need Caplio Pro just to take screenshots.",
+    badge: "Screenshot capture is free.",
+    imageAlt: "Caplio screenshot capture",
+    placeholderTitle: "Area or full screen",
+    placeholderBody:
+      "Customizable global shortcuts for capture without leaving your current app.",
+  },
+  {
+    id: "sessions",
+    title: "Keep a class, meeting, or project together",
+    description:
+      "Start a Capture Session for a class, meeting, research task, project, or any focused piece of work. Related captures stay connected to the Session so you can find the whole context later.",
+    detail:
+      "Name Sessions yourself, revisit them later, filter images by Session, and reassign captures when needed. Start Session → Capture → Search → Create Document.",
+    imageAlt: "Caplio Capture Sessions",
+    placeholderTitle: "Capture Sessions",
+    placeholderBody:
+      "A context for related captures — not a Timeline grouping mode.",
+  },
+  {
+    id: "search",
+    title: "Find anything you captured",
+    description:
+      "Caplio uses on-device OCR to make screenshots and images searchable. Search recognized text along with filenames, titles, categories, dates, and app information where available.",
+    detail:
+      "Local OCR and index-based search — not cloud AI, semantic search, or LLM search. Search screenshots on Mac without uploading your library for processing.",
+    image: "/screenshots/search.png",
+    imageAlt: "Caplio search results showing text inside screenshots",
+  },
+  {
+    id: "documents",
+    title: "Turn captures into documents",
+    description:
+      "Select screenshots and images, put them in the order you want, review the extracted text, and create a PDF or editable Word document.",
+    detail:
+      "Choose Image + Text, Image Only, or Text Only. Useful for classes, meetings, research, project documentation, and visual notes. You can edit OCR draft text for the document without changing the underlying library OCR.",
+    imageAlt: "Caplio Document Builder",
+    placeholderTitle: "PDF or Word",
+    placeholderBody:
+      "Image + Text, Image Only, or Text Only — you control the export.",
   },
   {
     id: "similar",
@@ -106,20 +169,21 @@ export const features = [
   },
   {
     id: "timeline",
-    title: "Browse your visual library",
+    title: "Your searchable visual library",
     description:
-      "Timeline browsing with categories, thumbnails, and detail views for every indexed image.",
+      "Add folders you choose and browse screenshots and images in a clean Timeline instead of digging through Finder. Supported types include PNG, JPEG, HEIC, TIFF, and WebP.",
     detail:
-      "Scroll through your image history by date, filter by category, and open any image in full detail.",
+      "Open originals, use Quick Look, copy or share, and drag images into compatible Mac apps.",
     image: "/screenshots/timeline.png",
     imageAlt: "Caplio timeline library view",
   },
   {
     id: "organize",
-    title: "Organize on your terms",
-    description: "Your files stay where they are.",
+    title: "Organize files on your terms",
+    description:
+      "Caplio can optionally organize your original files on disk by Date, Category, or Capture Session.",
     detail:
-      "By default, Caplio indexes images directly from the folders you choose, without importing duplicate copies into a separate library. If you enable organization, Caplio can optionally organize your original files by date or category.",
+      "By default, Caplio indexes images from the folders you choose without importing duplicate copies. Organization is optional and under your control — changing a Session does not by itself move files on disk.",
     image: "/screenshots/organize.png",
     imageAlt: "Caplio file organization",
   },
@@ -127,18 +191,19 @@ export const features = [
 
 export const privacyPoints = [
   {
-    title: "Local processing",
+    title: "On-device OCR and search",
     description:
-      "Caplio’s core image processing, OCR, indexing, and search happen locally.",
+      "Text recognition and search indexing run on your Mac. Images, OCR text, and search queries are not uploaded for processing.",
   },
   {
-    title: "Your Mac, your library",
-    description: "Your data stays safely on your Mac. Choose a subscription or Lifetime after your trial to continue using Caplio Pro.",
+    title: "Your visual library stays local",
+    description:
+      "Filenames, folder paths, Capture Session names, and document content are not uploaded for OCR, search, or remote library processing.",
   },
   {
-    title: "Minimal network use",
+    title: "Privacy-preserving analytics",
     description:
-      "Internet access may be used for Apple App Store purchase and subscription services.",
+      "Caplio may send limited anonymous product-usage events to improve the app. Analytics do not include images, OCR text, search terms, filenames, paths, Session names, or document content.",
   },
 ];
 
@@ -147,16 +212,16 @@ export const pricingDisclaimer =
 
 export const pricingPlans = [
   {
-    name: "Free trial",
-    badge: null,
-    prices: [{ amount: "7 days", period: "on your Mac" }],
+    name: "Free Capture",
+    badge: "Free",
+    prices: [{ amount: "Free", period: "forever" }],
     description:
-      "Try every feature during onboarding. Connect a folder, scan screenshots and images, and explore the full library.",
+      "Screenshot capture stays free. Capture an area or the full screen with customizable global shortcuts — no Caplio Pro required.",
     features: [
-      "Full access to all features",
-      "On-device OCR and search",
-      "Menu bar quick search",
-      "Timeline and organization",
+      "Screenshot Capture",
+      "Capture Area",
+      "Full Screen Capture",
+      "Customizable capture shortcuts",
     ],
     cta: "Download on the Mac App Store",
     highlighted: false,
@@ -165,16 +230,18 @@ export const pricingPlans = [
     name: "Caplio Pro",
     badge: "Subscription",
     prices: [
-      { amount: "$1.99", period: "/month" },
-      { amount: "$9.99", period: "/year" },
+      { amount: "$0.99", period: "/month" },
+      { amount: "$5.99", period: "/year" },
     ],
     description:
-      "Keep processing new screenshots and images, and keep using search and timeline after your trial ends.",
+      "Try Caplio Pro free for 7 days. Unlock the searchable visual library, on-device OCR search, Similar Images, Document Builder, and advanced file organization.",
     features: [
-      "Ongoing image indexing",
-      "Full-text search",
-      "Timeline browsing",
-      "Optional file organization",
+      "7-day Pro trial on your Mac",
+      "Searchable visual library",
+      "On-device OCR and search",
+      "Similar Images",
+      "Document Builder (PDF & DOCX)",
+      "Organize by Date, Category, or Capture Session",
       "Restore purchases on same Apple Account",
     ],
     cta: "Download on the Mac App Store",
@@ -183,15 +250,16 @@ export const pricingPlans = [
   {
     name: "Lifetime",
     badge: "Pay once",
-    prices: [{ amount: "$29.99", period: "one-time" }],
+    prices: [{ amount: "$9.99", period: "one-time" }],
     description:
       "Unlock Caplio Pro with a one-time purchase. No recurring subscription.",
     features: [
       "All Caplio Pro features",
-      "Ongoing image indexing",
-      "Full-text search",
-      "Timeline browsing",
-      "Optional file organization",
+      "Searchable visual library",
+      "On-device OCR and search",
+      "Similar Images",
+      "Document Builder (PDF & DOCX)",
+      "Organize by Date, Category, or Capture Session",
     ],
     cta: "Download on the Mac App Store",
     highlighted: true,

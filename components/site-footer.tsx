@@ -9,8 +9,8 @@ export function SiteFooter() {
         <div className="max-w-sm space-y-3">
           <p className="text-lg font-semibold tracking-tight">{siteConfig.name}</p>
           <p className="text-sm leading-relaxed text-muted">
-            A private, searchable visual library for your Mac. On-device OCR.
-            Your visual library stays on your Mac.
+            Capture, Sessions, search, and documents for your Mac. On-device
+            OCR. Your visual library stays on your Mac.
           </p>
           <p className="text-xs text-muted">
             © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.

@@ -21,11 +21,11 @@ const sections = [
     ],
   },
   {
-    title: "Free trial, subscriptions, and Lifetime",
+    title: "Free capture, trial, subscriptions, and Lifetime",
     content: [
-      `${siteConfig.name} offers a 7-day free trial on your Mac. After the trial, a Caplio Pro subscription or Lifetime purchase is required to continue processing new screenshots and images and using certain features.`,
+      `${siteConfig.name} includes free screenshot capture. Caplio also offers a 7-day Caplio Pro trial on your Mac. After the Pro trial, a Caplio Pro subscription or Lifetime purchase is required to continue using Caplio Pro features such as the searchable visual library and certain advanced organization and document workflows.`,
       "Subscriptions and Lifetime purchases are managed through the Apple App Store and subject to Apple’s terms. Payment, renewal, cancellation, and refunds are handled by Apple.",
-      "Your data stays safely on your Mac. Choose a subscription or Lifetime after your trial to continue using Caplio Pro.",
+      "Your visual library stays on your Mac. Choose a subscription or Lifetime after your Pro trial to continue using Caplio Pro.",
     ],
   },
   {
@@ -45,7 +45,7 @@ const sections = [
   {
     title: "Privacy",
     content: [
-      "Caplio’s core image processing, OCR, indexing, and search happen locally. Internet access may be used for Apple App Store purchase and subscription services.",
+      "Caplio’s core image processing, OCR, indexing, and search happen locally. Internet access may be used for Apple App Store purchase and subscription services, and Caplio may send limited privacy-preserving anonymous usage analytics as described in the Privacy Policy.",
       "See our Privacy Policy for full details.",
     ],
   },
@@ -70,7 +70,7 @@ const sections = [
   {
     title: "Contact",
     content: [
-      "For questions about these Terms, visit our Support page or contact us through the Mac App Store.",
+      "For questions about these Terms, visit our Support page and use Email Support.",
     ],
   },
 ];

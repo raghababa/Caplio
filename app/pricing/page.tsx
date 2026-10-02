@@ -15,8 +15,9 @@ export default function PricingPage() {
             Simple pricing
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted">
-            Your data stays safely on your Mac. Choose a subscription or
-            Lifetime after your trial to continue using Caplio Pro.
+            Screenshot capture is free. Try Caplio Pro free for 7 days to
+            explore the searchable visual library and advanced workflows.{" "}
+            {siteConfig.privacyLine}
           </p>
         </div>
       </section>
@@ -95,25 +96,35 @@ export default function PricingPage() {
           <h2 className="text-xl font-semibold">Frequently asked</h2>
           <dl className="mt-8 space-y-8 text-left">
             <div>
-              <dt className="font-medium">What happens after the trial?</dt>
+              <dt className="font-medium">
+                Do I need Caplio Pro to take screenshots?
+              </dt>
               <dd className="mt-2 text-sm leading-relaxed text-muted">
-                Your library remains on your Mac. After the trial, you can
-                choose a subscription or a Lifetime purchase to continue using
-                Caplio Pro features.
+                No. Screenshot capture is free. Caplio Pro unlocks the
+                searchable visual library and advanced organization and document
+                workflows.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-medium">What happens after the Pro trial?</dt>
+              <dd className="mt-2 text-sm leading-relaxed text-muted">
+                Your library remains on your Mac. Screenshot capture remains
+                free. After the 7-day Caplio Pro trial, choose a subscription or
+                a Lifetime purchase to continue using Caplio Pro features.
               </dd>
             </div>
             <div>
               <dt className="font-medium">Is the trial an App Store offer?</dt>
               <dd className="mt-2 text-sm leading-relaxed text-muted">
-                No. Caplio includes a 7-day local trial that starts on your Mac.
-                It is managed by Caplio and is not an App Store introductory
-                offer.
+                No. Caplio includes a 7-day local Caplio Pro trial that starts on
+                your Mac. It is managed by Caplio and is not an App Store
+                introductory offer.
               </dd>
             </div>
             <div>
               <dt className="font-medium">What is Lifetime?</dt>
               <dd className="mt-2 text-sm leading-relaxed text-muted">
-                Lifetime is a one-time $29.99 purchase that unlocks Caplio Pro
+                Lifetime is a one-time $9.99 purchase that unlocks Caplio Pro
                 without a recurring subscription. If you already have an active
                 subscription, purchasing Lifetime does not automatically cancel
                 it. Manage or cancel that subscription through your Apple

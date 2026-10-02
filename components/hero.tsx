@@ -20,18 +20,20 @@ export function Hero() {
             {siteConfig.tagline}
           </h1>
 
-          <p className="mt-5 text-xl font-medium tracking-tight text-foreground/80 md:text-2xl">
-            {siteConfig.slogan}
-          </p>
-
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted">
             {siteConfig.description}
           </p>
 
+          <p className="mt-5 text-base font-semibold tracking-tight text-foreground md:text-lg">
+            {siteConfig.slogan}
+          </p>
+
+          <p className="mt-2 text-sm text-muted">{siteConfig.privacyLine}</p>
+
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-center">
             <AppStoreBadge />
-            <Button href="#watch" variant="secondary">
-              Watch how Caplio works
+            <Button href="#features" variant="secondary">
+              See how Caplio works
             </Button>
           </div>
         </div>

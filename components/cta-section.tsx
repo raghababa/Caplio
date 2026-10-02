@@ -9,9 +9,9 @@ export function CtaSection() {
           Get {siteConfig.name} on your Mac
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-lg text-muted">
-          A private, searchable library for screenshots and images on your Mac.
-          Find what you need, organize it your way, and drag it into the apps
-          where you work.
+          Capture screenshots for free. Keep related captures in Sessions,
+          search text inside images, and turn what you collect into documents.{" "}
+          {siteConfig.privacyLine}
         </p>
         <div className="mt-8 flex justify-center">
           <AppStoreBadge />

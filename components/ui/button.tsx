@@ -46,6 +46,10 @@ export function Button({
       );
     }
 
+    if (href.startsWith("mailto:")) {
+      return <a href={href} className={classes} {...linkProps} />;
+    }
+
     return <Link href={href} className={classes} {...linkProps} />;
   }
 
