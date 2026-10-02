@@ -59,7 +59,8 @@ export function getSoftwareApplicationJsonLd() {
         name: "Free Capture",
         price: "0",
         priceCurrency: "USD",
-        description: "Screenshot capture is free.",
+        description:
+          "Screenshot capture is free forever. New users also get 7 days of full Caplio Pro access.",
       },
       {
         "@type": "Offer",

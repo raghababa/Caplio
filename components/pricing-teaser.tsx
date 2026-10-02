@@ -13,12 +13,15 @@ export function PricingTeaser() {
             Free vs Pro
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-            Capture screenshots for free. Try Caplio Pro free for 7 days.
+            Start with 7 days of Caplio Pro. Keep screenshot capture free
+            forever.
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted">
-            Screenshot capture stays free. Caplio Pro unlocks the searchable
-            visual library, on-device OCR search, Similar Images, Document
-            Builder, and advanced file organization.
+            New users get full Caplio Pro access for 7 days. After the trial,
+            screenshot capture stays free — no subscription required just to
+            keep capturing. Caplio Pro unlocks the searchable visual library,
+            on-device OCR search, Similar Images, Document Builder, and advanced
+            file organization.
           </p>
           <p className="mt-3 text-sm text-muted">
             Caplio Pro is $0.99/month, $5.99/year, or $9.99 Lifetime (one-time).

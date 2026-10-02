@@ -27,7 +27,7 @@ export const productFaqs: FaqItem[] = [
   {
     question: "Do I need Caplio Pro to take screenshots?",
     answer:
-      "No. Screenshot capture is free. Caplio Pro unlocks the searchable visual library and advanced organization and document workflows.",
+      "No. Screenshot capture is free forever. You do not need Caplio Pro just to take screenshots. Caplio Pro unlocks the searchable visual library and advanced organization and document workflows.",
   },
   {
     question: "What are Capture Sessions?",
@@ -117,7 +117,7 @@ export const productFaqs: FaqItem[] = [
   {
     question: "Does Caplio have a free trial?",
     answer:
-      "Screenshot capture is free. Caplio also provides a 7-day trial of Caplio Pro on your Mac so you can explore the searchable visual library and advanced organization and document workflows. Purchase and subscription options are available through the app and Mac App Store.",
+      "Screenshot capture is free forever. Caplio also provides a 7-day trial of Caplio Pro on your Mac so you can explore the searchable visual library and advanced organization and document workflows. After the trial, you can keep capturing for free without a subscription. Purchase and subscription options are available through the app and Mac App Store.",
   },
 ];
 

@@ -49,7 +49,7 @@ export const pages = {
     path: "/pricing",
     title: "Pricing",
     description:
-      "Screenshot capture is free. Try Caplio Pro free for 7 days. Caplio Pro is $0.99/month, $5.99/year, or $9.99 Lifetime (one-time). Prices shown in USD and may vary by region.",
+      "Start with 7 days of Caplio Pro. Keep screenshot capture free forever. Caplio Pro is $0.99/month, $5.99/year, or $9.99 Lifetime (one-time). Prices shown in USD and may vary by region.",
   },
   privacy: {
     path: "/privacy",
@@ -216,12 +216,13 @@ export const pricingPlans = [
     badge: "Free",
     prices: [{ amount: "Free", period: "forever" }],
     description:
-      "Screenshot capture stays free. Capture an area or the full screen with customizable global shortcuts — no Caplio Pro required.",
+      "Screenshot capture stays free forever. New users also get 7 days of full Caplio Pro access to try the complete experience.",
     features: [
       "Screenshot Capture",
       "Capture Area",
       "Full Screen Capture",
       "Customizable capture shortcuts",
+      "7-day Caplio Pro trial",
     ],
     cta: "Download on the Mac App Store",
     highlighted: false,
@@ -234,9 +235,8 @@ export const pricingPlans = [
       { amount: "$5.99", period: "/year" },
     ],
     description:
-      "Try Caplio Pro free for 7 days. Unlock the searchable visual library, on-device OCR search, Similar Images, Document Builder, and advanced file organization.",
+      "Continue Caplio Pro after your 7-day trial with a monthly or yearly subscription. Unlock the searchable visual library, on-device OCR search, Similar Images, Document Builder, and advanced file organization. Screenshot capture stays free either way.",
     features: [
-      "7-day Pro trial on your Mac",
       "Searchable visual library",
       "On-device OCR and search",
       "Similar Images",
@@ -252,7 +252,7 @@ export const pricingPlans = [
     badge: "Pay once",
     prices: [{ amount: "$9.99", period: "one-time" }],
     description:
-      "Unlock Caplio Pro with a one-time purchase. No recurring subscription.",
+      "Unlock Caplio Pro with a one-time $9.99 purchase. No recurring subscription. Screenshot capture remains free either way.",
     features: [
       "All Caplio Pro features",
       "Searchable visual library",

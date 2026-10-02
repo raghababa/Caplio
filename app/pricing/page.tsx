@@ -14,20 +14,24 @@ export default function PricingPage() {
           <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
             Simple pricing
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted">
-            Screenshot capture is free. Try Caplio Pro free for 7 days to
-            explore the searchable visual library and advanced workflows.{" "}
-            {siteConfig.privacyLine}
+          <p className="mx-auto mt-4 max-w-2xl text-lg font-medium text-foreground">
+            Start with 7 days of Caplio Pro. Keep screenshot capture free
+            forever.
+          </p>
+          <p className="mx-auto mt-3 max-w-2xl text-base text-muted">
+            New users get full Caplio Pro access for 7 days. After the trial,
+            screenshot capture stays free — you do not need a subscription just
+            to keep capturing. {siteConfig.privacyLine}
           </p>
         </div>
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="mx-auto grid max-w-6xl gap-8 px-6 md:grid-cols-3">
+        <div className="mx-auto grid max-w-6xl items-stretch gap-8 px-6 md:grid-cols-3">
           {pricingPlans.map((plan) => (
             <div
               key={plan.name}
-              className={`flex flex-col rounded-3xl border p-8 md:p-10 ${
+              className={`flex h-full flex-col rounded-3xl border p-8 md:p-10 ${
                 plan.highlighted
                   ? "border-accent bg-white shadow-xl shadow-accent/10 ring-1 ring-accent/20"
                   : "border-border bg-surface"
@@ -49,7 +53,7 @@ export default function PricingPage() {
                   </div>
                 ))}
               </div>
-              <p className="mt-4 text-sm leading-relaxed text-muted">
+              <p className="mt-4 min-h-[4.5rem] text-sm leading-relaxed text-muted md:min-h-[5.25rem]">
                 {plan.description}
               </p>
               <ul className="mt-8 flex-1 space-y-3">
@@ -100,17 +104,20 @@ export default function PricingPage() {
                 Do I need Caplio Pro to take screenshots?
               </dt>
               <dd className="mt-2 text-sm leading-relaxed text-muted">
-                No. Screenshot capture is free. Caplio Pro unlocks the
-                searchable visual library and advanced organization and document
-                workflows.
+                No. Screenshot capture is free forever. You do not need a
+                subscription or Lifetime purchase just to continue capturing.
+                Caplio Pro unlocks the searchable visual library and advanced
+                organization and document workflows.
               </dd>
             </div>
             <div>
               <dt className="font-medium">What happens after the Pro trial?</dt>
               <dd className="mt-2 text-sm leading-relaxed text-muted">
-                Your library remains on your Mac. Screenshot capture remains
-                free. After the 7-day Caplio Pro trial, choose a subscription or
-                a Lifetime purchase to continue using Caplio Pro features.
+                New users get 7 days of full Caplio Pro access. When the trial
+                ends, Caplio does not stop working — screenshot capture remains
+                free. Choose a monthly ($0.99), yearly ($5.99), or Lifetime
+                ($9.99 one-time) purchase only if you want to keep using Caplio
+                Pro features. Your library remains on your Mac.
               </dd>
             </div>
             <div>
