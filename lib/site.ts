@@ -116,7 +116,6 @@ export const features: Feature[] = [
       "Capture an area or your full screen directly with Caplio. Customizable global shortcuts let you capture without interrupting what you're doing.",
     detail:
       "Screenshot capture is free — you do not need Caplio Pro just to take screenshots.",
-    badge: "Screenshot capture is free.",
     image: "/screenshots/capture.jpg",
     imageAlt:
       "Caplio menu bar capture menu showing Capture Area and Full Screen shortcuts",
