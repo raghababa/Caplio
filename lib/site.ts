@@ -117,10 +117,9 @@ export const features: Feature[] = [
     detail:
       "Screenshot capture is free — you do not need Caplio Pro just to take screenshots.",
     badge: "Screenshot capture is free.",
-    imageAlt: "Caplio screenshot capture",
-    placeholderTitle: "Area or full screen",
-    placeholderBody:
-      "Customizable global shortcuts for capture without leaving your current app.",
+    image: "/screenshots/capture.jpg",
+    imageAlt:
+      "Caplio menu bar capture menu showing Capture Area and Full Screen shortcuts",
   },
   {
     id: "sessions",
@@ -129,10 +128,9 @@ export const features: Feature[] = [
       "Start a Capture Session for a class, meeting, research task, project, or any focused piece of work. Related captures stay connected to the Session so you can find the whole context later.",
     detail:
       "Name Sessions yourself, revisit them later, filter images by Session, and reassign captures when needed. Start Session → Capture → Search → Create Document.",
-    imageAlt: "Caplio Capture Sessions",
-    placeholderTitle: "Capture Sessions",
-    placeholderBody:
-      "A context for related captures — not a Timeline grouping mode.",
+    image: "/screenshots/sessions.jpg",
+    imageAlt:
+      "Caplio detail view with an active Capture Session and recognized text",
   },
   {
     id: "search",
@@ -151,10 +149,9 @@ export const features: Feature[] = [
       "Select screenshots and images, put them in the order you want, review the extracted text, and create a PDF or editable Word document.",
     detail:
       "Choose Image + Text, Image Only, or Text Only. Useful for classes, meetings, research, project documentation, and visual notes. You can edit OCR draft text for the document without changing the underlying library OCR.",
-    imageAlt: "Caplio Document Builder",
-    placeholderTitle: "PDF or Word",
-    placeholderBody:
-      "Image + Text, Image Only, or Text Only — you control the export.",
+    image: "/screenshots/documents.jpg",
+    imageAlt:
+      "Caplio Document Builder with Image + Extracted Text selected for PDF or DOCX export",
   },
   {
     id: "similar",
