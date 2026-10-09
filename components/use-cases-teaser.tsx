@@ -6,7 +6,7 @@ const featuredSlugs = [
   "organize-meeting-screenshots-on-mac",
   "turn-screenshots-into-pdf-on-mac",
   "organize-screenshots-by-capture-session",
-  "screenshot-workflows-for-designers",
+  "privacy-first-screenshot-manager-for-mac",
   "screenshot-workflows-for-developers",
 ] as const;
 

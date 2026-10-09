@@ -34,12 +34,12 @@ export const useCases: UseCase[] = [
       "Screenshots pile up on the Desktop and in Pictures. Finder search does not read text inside images, and renaming files by hand is slow. You need an organizer built for screenshots and images on macOS.",
     howTitle: "How Caplio helps",
     how: [
-      "Capture screenshots directly with Caplio (screenshot capture is free)",
+      "Capture region, full screen, window, or fixed-region screenshots (screenshot capture is free)",
       "Keep related captures together in Capture Sessions",
       "Index screenshots and images from folders you choose",
       "Browse your library in a timeline with categories and thumbnails",
       "Search by recognized text, filename, category, app, or date",
-      "Optionally organize original files by Date, Category, or Capture Session",
+      "Optionally organize eligible processed library images by Date, Category, or Capture Session",
     ],
     whyCaplio: [
       "Local-first on macOS",
@@ -130,20 +130,20 @@ export const useCases: UseCase[] = [
     title: "Organize screenshots automatically on Mac",
     metaTitle: "Organize Screenshots Automatically on Mac",
     metaDescription:
-      "Optionally organize screenshots and images on your Mac with Caplio. Keep files in place by default, or enable organization by Date, Category, or Capture Session with move previews and history.",
+      "Optionally organize eligible processed screenshots on your Mac with Caplio. Keep files in place by default, or enable organization by Date, Category, or Capture Session with move previews and history.",
     eyebrow: "Use case",
     headline: "Organize screenshots automatically on Mac",
     intro: [
-      "Caplio can optionally organize screenshots and images by Date, Category, or Capture Session after you enable file organization.",
-      "By default, Caplio indexes images where they already are — without importing duplicate copies into a separate library.",
+      "Caplio can optionally organize eligible, processed library images from authorized watched folders by Date, Category, or Capture Session after you enable file organization.",
+      "By default, Caplio indexes images where they already are — without importing duplicate copies into a separate library. Caplio does not claim to reorganize every file on your Desktop automatically.",
     ],
     problemTitle: "The problem",
     problem:
-      "Automatic organizers sometimes move files without enough control. Caplio keeps organization optional: search and browse first, then organize originals only when you choose to.",
+      "Automatic organizers sometimes move files without enough control. Caplio keeps organization optional: search and browse first, then organize eligible library originals only when you choose to.",
     howTitle: "How Caplio helps",
     how: [
       "Index screenshots and images in place by default",
-      "Enable optional organization by Date, Category, or Capture Session",
+      "Enable optional organization by Date, Category, or Capture Session for eligible processed images",
       "Use move previews before files are rearranged",
       "Restore moved files through organization history when possible",
       "Keep using search and timeline without enabling organization",
@@ -205,7 +205,7 @@ export const useCases: UseCase[] = [
     headline: "Screenshot manager without uploading images",
     intro: [
       "Caplio is a screenshot and image manager for Mac that keeps library processing local. OCR, indexing, and search run on your Mac. Caplio does not upload your image library to a cloud OCR or remote AI service for analysis.",
-      "App Store purchases and privacy-preserving anonymous product analytics may still use network services. See the Privacy Policy for details.",
+      "Current Caplio builds do not include Caplio-controlled usage analytics. App Store / StoreKit services may still use the network for purchases and restoration. See the Privacy Policy for details.",
     ],
     problemTitle: "The problem",
     problem:
@@ -225,6 +225,7 @@ export const useCases: UseCase[] = [
       "No separate cloud library to sync for OCR",
     ],
     relatedSlugs: [
+      "privacy-first-screenshot-manager-for-mac",
       "local-ocr-for-mac",
       "screenshot-organizer-for-mac",
       "search-text-inside-screenshots-on-mac",
@@ -282,7 +283,7 @@ export const useCases: UseCase[] = [
       "During live classes, you need to capture quickly without losing focus. Afterward, related screenshots are scattered and hard to turn into study notes.",
     howTitle: "How Caplio helps",
     how: [
-      "Capture an area or the full screen with global shortcuts",
+      "Capture a region, full screen, window, or fixed region with global shortcuts",
       "Keep every lecture capture in one Capture Session",
       "Search text inside slides later with on-device OCR",
       "Select and reorder the useful images",
@@ -544,6 +545,42 @@ export const useCases: UseCase[] = [
       "search-text-inside-screenshots-on-mac",
       "turn-screenshots-into-pdf-on-mac",
       "screenshot-workflows-for-designers",
+    ],
+  },
+  {
+    slug: "privacy-first-screenshot-manager-for-mac",
+    title: "Privacy-first screenshot manager for Mac",
+    metaTitle: "Privacy-First Screenshot Manager for Mac",
+    metaDescription:
+      "A private screenshot manager for Mac work. Caplio keeps OCR, search, and library processing on-device. No cloud AI required to search your screenshots.",
+    eyebrow: "Use case",
+    headline: "Privacy-first screenshot manager for Mac",
+    intro: [
+      "Caplio is built for people who capture screenshots while they work and want library processing to stay on the Mac. OCR, search indexing, categorization, similarity detection, and document drafting run locally.",
+      "Current Caplio builds do not include Caplio-controlled usage analytics. Caplio still uses Apple’s App Store services for purchases and restoration when needed. Caplio does not claim enterprise security certifications or completed penetration testing.",
+    ],
+    problemTitle: "The problem",
+    problem:
+      "Many screenshot and “AI organizer” tools send images or extracted text to remote services. For class notes, client work, research, or internal screens, that boundary matters.",
+    howTitle: "How Caplio helps",
+    how: [
+      "Capture screenshots with free region, full-screen, window, and fixed-region modes",
+      "Keep related work in Capture Sessions",
+      "Search text inside screenshots with on-device Apple Vision OCR",
+      "Export selected captures to PDF or Word without cloud document AI",
+      "Authorize only the folders you choose to watch",
+    ],
+    whyCaplio: [
+      "Local-first visual library",
+      "No cloud OCR required to search",
+      "Clear Free Capture vs Caplio Pro model",
+      "Readable Privacy Policy with version notes",
+    ],
+    relatedSlugs: [
+      "screenshot-manager-without-uploading-images",
+      "local-ocr-for-mac",
+      "screenshot-organizer-for-mac",
+      "search-text-inside-screenshots-on-mac",
     ],
   },
 ];

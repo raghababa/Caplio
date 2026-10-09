@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { pricingDisclaimer } from "@/lib/site";
+import { pricingDisclaimer, pricingSummary } from "@/lib/site";
 
 export function PricingTeaser() {
   return (
@@ -23,9 +23,10 @@ export function PricingTeaser() {
             on-device OCR search, Similar Images, Document Builder, and advanced
             file organization.
           </p>
-          <p className="mt-3 text-sm text-muted">
-            Caplio Pro is $0.99/month, $5.99/year, or $9.99 Lifetime (one-time).
+          <p className="mt-4 text-xs font-medium uppercase tracking-wider text-accent">
+            US Pricing
           </p>
+          <p className="mt-2 text-sm text-muted">{pricingSummary}</p>
           <p className="mt-2 text-xs text-muted">{pricingDisclaimer}</p>
           <div className="mt-8">
             <Button href="/pricing" variant="primary">

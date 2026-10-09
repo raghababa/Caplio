@@ -16,18 +16,18 @@ const sections: PrivacySection[] = [
   {
     title: "Privacy at a Glance",
     content: [
-      `${siteConfig.name} is a local-first macOS app for capturing screenshots, searching and organizing images, and creating documents. Your visual library stays on your Mac.`,
-      "Your images, OCR text, search queries, filenames, folder paths, Capture Session names, and document content are not uploaded for analytics or remote processing.",
-      "Caplio may send limited privacy-preserving usage analytics to TelemetryDeck to help us understand how the product is used and improve the app. Analytics are separate from your library content.",
-      "Caplio does not use analytics for advertising, does not use TelemetryDeck for cross-app or cross-website tracking, and does not sell personal data.",
+      `${siteConfig.name} is a local-first macOS screenshot manager and searchable visual library. Your visual library stays on your Mac.`,
+      "OCR, categorization, similarity detection, search indexing, thumbnails, and document processing run on-device. Screenshots, OCR text, search queries, filenames, folder paths, Capture Session names, and document content are not uploaded for processing.",
+      "Current Caplio builds do not include Caplio-controlled usage analytics, do not transmit an analytics installation identifier, and do not use a third-party analytics SDK such as TelemetryDeck.",
+      "Caplio may still use the network for Apple App Store / StoreKit purchase and entitlement services, and when you choose to open Privacy or Terms links or send feedback by email. Caplio does not sell personal data and does not use advertising trackers.",
     ],
   },
   {
     title: "Information Processed Locally",
     content: [
-      "Core Caplio features run on your Mac. OCR, indexing, search, categorization, thumbnail generation, and Similar Images processing are performed locally/on-device.",
+      "Core Caplio features run on your Mac. OCR, indexing, search, automatic categorization of indexed images, thumbnail generation, Similar Images processing, and Document Builder processing are performed locally/on-device.",
       "Caplio does not require cloud AI to search your library.",
-      "The following stay on your Mac and are not uploaded for analytics or remote processing:",
+      "The following stay on your Mac and are not uploaded for remote library processing:",
       <ul
         key="local-content-list"
         className="list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-muted"
@@ -46,142 +46,55 @@ const sections: PrivacySection[] = [
         <li>manually edited titles</li>
         <li>Similar Images screenshot/group IDs</li>
         <li>security-scoped bookmark data</li>
-        <li>StoreKit transaction IDs</li>
-        <li>StoreKit receipts</li>
+        <li>StoreKit transaction IDs and receipts (handled locally / by Apple as applicable)</li>
         <li>the app’s local trial installation ID</li>
+        <li>local diagnostic logs (not automatically uploaded)</li>
       </ul>,
     ],
   },
   {
     title: "Folder and File Access",
     content: [
-      "Caplio accesses only the folders you select or authorize, as needed for its library features.",
-      "Folder authorization and security-scoped bookmark information remain local on your Mac and are not sent as analytics.",
+      "Caplio accesses only the folders you select or authorize, as needed for its library features. You can watch multiple folders.",
+      "Folder authorization and security-scoped bookmark information remain local on your Mac.",
+      "Optional file organization applies to eligible, processed library images from authorized watched folders. Caplio does not claim to automatically reorganize every file on your Desktop.",
       "You can remove folder access through Caplio’s settings or macOS Privacy & Security settings.",
     ],
   },
   {
-    title: "Anonymous Usage Analytics",
+    title: "Usage Analytics",
     content: [
-      "Caplio uses TelemetryDeck, a privacy-preserving analytics service, to collect limited anonymous product-usage events. We use this information to understand how Caplio is used and to improve the product.",
-      "Examples of product interactions that may be recorded include:",
-      <ul
-        key="analytics-examples"
-        className="list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-muted"
-      >
-        <li>whether onboarding was completed</li>
-        <li>whether a folder was added</li>
-        <li>whether the first image became searchable</li>
-        <li>whether Search was used</li>
-        <li>whether a search returned results</li>
-        <li>whether Similar Images was opened or resolved</li>
-        <li>whether Document Builder was opened</li>
-        <li>whether a document was exported</li>
-        <li>export format, such as PDF or DOCX</li>
-        <li>whether the paywall was viewed</li>
-        <li>
-          the subscription plan category involved in a purchase attempt or
-          completion
-        </li>
-      </ul>,
-      "These events describe product interactions. They do not include the contents of your visual library.",
+      "In current Caplio builds, Caplio does not collect Caplio-controlled product-usage analytics and does not include TelemetryDeck or another third-party analytics transport.",
+      "Production analytics behavior uses a no-op tracker: Caplio does not send automatic app telemetry for product analytics.",
+      "This does not mean Caplio never uses the network. Apple’s App Store and StoreKit services may still communicate with Apple when you purchase, restore, or verify Caplio Pro access.",
     ],
   },
   {
-    title: "Information Not Sent to Analytics",
+    title: "Earlier Versions and Historical Analytics",
     content: [
-      "Analytics events do not contain:",
-      <ul
-        key="analytics-exclusions"
-        className="list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-muted"
-      >
-        <li>screenshots or images</li>
-        <li>OCR text</li>
-        <li>search queries</li>
-        <li>filenames</li>
-        <li>file or folder paths</li>
-        <li>Capture Session names</li>
-        <li>document titles or content</li>
-        <li>screenshot or group IDs</li>
-        <li>StoreKit transaction IDs</li>
-        <li>receipts</li>
-      </ul>,
-      "Caplio does not send your actual search query, image, document, filename, or other library content to TelemetryDeck.",
-    ],
-  },
-  {
-    title: "Technical Analytics Metadata",
-    content: [
-      "The TelemetryDeck SDK may attach technical metadata needed for aggregate analytics, such as:",
-      <ul
-        key="technical-metadata"
-        className="list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-muted"
-      >
-        <li>app version and build</li>
-        <li>macOS / platform information</li>
-        <li>device model / architecture</li>
-        <li>language, locale, and region</li>
-        <li>timezone</li>
-        <li>screen / device characteristics</li>
-        <li>SDK version</li>
-        <li>debug, App Store, or TestFlight context</li>
-        <li>session information</li>
-        <li>an installation-specific anonymous identifier</li>
-      </ul>,
-      "This means Caplio does not upload your visual-library content, but it does transmit limited product-interaction and technical analytics data.",
-      "TelemetryDeck uses an installation-specific anonymous identifier for aggregate analytics. Caplio does not provide TelemetryDeck with your name, email address, Apple Account, a Caplio account (Caplio does not require a user account), Caplio’s Keychain trial installation ID, or library/database identifiers.",
-      "According to TelemetryDeck’s documentation, IP addresses are not stored as part of its analytics data.",
+      "Some earlier Caplio versions included privacy-preserving anonymous product-usage analytics through TelemetryDeck. Those events were intended to describe product interactions and did not include screenshots, OCR text, search queries, filenames, folder paths, Capture Session names, or document content.",
+      "If you used an older analytics-enabled version, analytics data already transmitted (if any) is subject to the practices of that third-party service and the privacy policy that applied at the time.",
+      "Deleting Caplio from your Mac does not necessarily delete previously transmitted aggregate analytics data. Caplio does not claim that historical TelemetryDeck records have been deleted.",
     ],
   },
   {
     title: "Purchases and Subscriptions",
     content: [
       "Purchases and subscriptions are processed through Apple’s App Store and StoreKit. Caplio does not receive your credit card or other payment card details.",
-      "Analytics may record only the general Caplio plan category associated with a purchase event, such as monthly, yearly, or lifetime. StoreKit transaction IDs and receipts are not sent to TelemetryDeck.",
       "Internet access may be used for Apple App Store purchase and subscription services, including verifying Caplio Pro access and restoring purchases.",
     ],
   },
   {
     title: "Local Data Storage",
     content: [
-      "Caplio stores product and library information locally on your Mac as needed for functionality. This may include image library and index information, OCR and indexing data, watched-folder authorization, settings, local trial state, and analytics milestone flags.",
-      "Analytics milestone flags are local state used to avoid repeatedly recording one-time milestones.",
-      "Core library, search, and OCR features do not require uploading your library content. An internet connection may still be used for App Store services and anonymous usage analytics when available.",
+      "Caplio stores product and library information locally on your Mac as needed for functionality. This may include image library and index information, OCR and indexing data, watched-folder authorization, settings, local trial state, and local diagnostic logs.",
+      "Local diagnostic logs are not automatically uploaded. Feedback is user-initiated through your email app when you choose to contact support.",
+      "Core library, search, and OCR features do not require uploading your library content.",
     ],
   },
   {
     title: "Third-Party Services",
     content: [
-      <>
-        Caplio uses{" "}
-        <a
-          href="https://telemetrydeck.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-accent hover:underline"
-        >
-          TelemetryDeck
-        </a>{" "}
-        for privacy-preserving product analytics. For more information, see{" "}
-        <a
-          href="https://telemetrydeck.com/privacy/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-accent hover:underline"
-        >
-          TelemetryDeck’s Privacy Policy
-        </a>{" "}
-        and{" "}
-        <a
-          href="https://telemetrydeck.com/docs/guides/privacy-faq/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-accent hover:underline"
-        >
-          Privacy FAQ
-        </a>
-        .
-      </>,
       <>
         Purchases are handled by Apple. See Apple’s App Store and privacy
         information at{" "}
@@ -195,20 +108,21 @@ const sections: PrivacySection[] = [
         </a>
         .
       </>,
-      "This website does not use third-party analytics or advertising trackers.",
+      "Opening Privacy Policy or Terms links is user-initiated. Sending feedback opens a user-initiated email composer.",
+      "This website does not use third-party analytics, advertising trackers, or cookie banners.",
     ],
   },
   {
     title: "Data Retention and User Control",
     content: [
       "Deleting Caplio or removing its local application data removes locally stored Caplio data, subject to normal macOS and App Store behavior.",
-      "Analytics data already transmitted to TelemetryDeck is handled under TelemetryDeck’s applicable privacy and data practices. Deleting the local app does not necessarily delete previously transmitted aggregate analytics data.",
+      "Apple retains purchase and subscription records according to Apple’s policies. Historical analytics from older Caplio versions, if any, are governed by the third-party practices applicable when that data was transmitted.",
     ],
   },
   {
     title: "Children’s Privacy",
     content: [
-      "Caplio is not directed to children, and we do not knowingly collect personal information from children through Caplio analytics.",
+      "Caplio is not directed to children, and we do not knowingly collect personal information from children through Caplio.",
     ],
   },
   {
@@ -235,7 +149,7 @@ export default function PrivacyPage() {
   return (
     <SiteLayout>
       <article className="mx-auto max-w-3xl px-6 py-20 md:py-28">
-        <p className="text-sm text-muted">Last updated: October 2, 2026</p>
+        <p className="text-sm text-muted">Last updated: October 9, 2026</p>
         <h1 className="mt-2 text-4xl font-semibold tracking-tight">
           Privacy Policy
         </h1>

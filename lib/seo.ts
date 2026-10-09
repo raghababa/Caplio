@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pages, siteConfig } from "@/lib/site";
+import { pages, pricingUs, siteConfig } from "@/lib/site";
 
 type PageKey = keyof typeof pages;
 
@@ -51,7 +51,7 @@ export function getSoftwareApplicationJsonLd() {
     applicationCategory: "ProductivityApplication",
     operatingSystem: "macOS",
     description:
-      "Caplio is a private visual workflow for Mac. Capture screenshots for free, keep related captures in Sessions, search text inside images with on-device OCR, find similar images, optionally organize files by Date, Category, or Capture Session, and create PDF or Word documents. Your visual library stays on your Mac.",
+      "Caplio is a private screenshot manager and searchable visual library for Mac. Capture region, full screen, window, or fixed-region screenshots with customizable shortcuts; organize Capture Sessions; search text inside images with on-device OCR; find similar images; optionally organize eligible library files by Date, Category, or Capture Session; and export PDF or Word documents. Your visual library stays on your Mac.",
     downloadUrl: siteConfig.appStoreUrl,
     offers: [
       {
@@ -65,37 +65,48 @@ export function getSoftwareApplicationJsonLd() {
       {
         "@type": "Offer",
         name: "Caplio Pro Monthly",
-        price: "0.99",
+        price: pricingUs.monthly.replace("$", ""),
         priceCurrency: "USD",
-        description: "Caplio Pro subscription billed monthly.",
+        description:
+          "US price for Caplio Pro monthly subscription. Actual App Store prices may vary by country or region.",
+        areaServed: "US",
       },
       {
         "@type": "Offer",
         name: "Caplio Pro Yearly",
-        price: "5.99",
+        price: pricingUs.yearly.replace("$", ""),
         priceCurrency: "USD",
-        description: "Caplio Pro subscription billed yearly.",
+        description:
+          "US price for Caplio Pro yearly subscription. Actual App Store prices may vary by country or region.",
+        areaServed: "US",
       },
       {
         "@type": "Offer",
         name: "Lifetime",
-        price: "9.99",
+        price: pricingUs.lifetime.replace("$", ""),
         priceCurrency: "USD",
-        description: "Caplio Pro as a one-time purchase.",
+        description:
+          "US price for Caplio Pro as a one-time purchase. Actual App Store prices may vary by country or region.",
+        areaServed: "US",
       },
     ],
     featureList: [
       "Free screenshot capture for Mac",
-      "Capture area and full screen",
+      "Region capture",
+      "Full-screen capture",
+      "Window capture and window selection",
+      "Fixed-region capture",
       "Customizable global capture shortcuts",
       "Capture Sessions",
       "Search screenshots and images",
-      "On-device OCR",
+      "On-device OCR with Apple Vision",
       "Search recognized text",
+      "Automatic categorization of indexed images",
       "Document Builder for PDF and DOCX",
       "Similar Images and Exact Copies review",
       "Timeline browsing",
-      "Organize by Date, Category, or Capture Session",
+      "Multiple watched folders",
+      "Organize eligible processed images by Date, Category, or Capture Session",
       "Drag and drop images into other Mac apps",
       "Local-first visual library processing",
       "No cloud OCR or remote AI processing of your library",

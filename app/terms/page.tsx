@@ -45,7 +45,7 @@ const sections = [
   {
     title: "Privacy",
     content: [
-      "Caplio’s core image processing, OCR, indexing, and search happen locally. Internet access may be used for Apple App Store purchase and subscription services, and Caplio may send limited privacy-preserving anonymous usage analytics as described in the Privacy Policy.",
+      "Caplio’s core image processing, OCR, indexing, and search happen locally. Internet access may be used for Apple App Store purchase and subscription services. Current Caplio builds do not include Caplio-controlled usage analytics. See the Privacy Policy for details, including notes about older versions.",
       "See our Privacy Policy for full details.",
     ],
   },

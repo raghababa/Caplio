@@ -9,7 +9,7 @@ import { getUseCasePath, useCases } from "@/lib/use-cases";
 export const metadata: Metadata = {
   title: "Use Cases",
   description:
-    "Caplio use cases for Mac: screenshot capture, Capture Sessions, search text inside screenshots, local OCR, screenshots to PDF or Word, and private visual workflows.",
+    "Caplio use cases for Mac: screenshot manager, Capture Sessions, search text inside screenshots, local OCR, screenshots to PDF or Word, and privacy-first visual workflows.",
   alternates: {
     canonical: "/use-cases",
   },

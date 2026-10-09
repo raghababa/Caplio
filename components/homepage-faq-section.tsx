@@ -14,8 +14,8 @@ export function HomepageFaqSection() {
             Frequently asked questions
           </h2>
           <p className="mt-4 text-lg text-muted">
-            Clear answers about free screenshot capture, Capture Sessions,
-            documents, Caplio Pro, and privacy.
+            Clear answers about free screenshot capture, shortcuts, Pro
+            features, privacy, analytics, and download.
           </p>
         </div>
 

@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { SiteLayout } from "@/components/site-layout";
 import { createPageMetadata } from "@/lib/seo";
-import { pricingDisclaimer, pricingPlans, siteConfig } from "@/lib/site";
+import {
+  pricingDisclaimer,
+  pricingPlans,
+  pricingUs,
+  siteConfig,
+} from "@/lib/site";
 
 export const metadata: Metadata = createPageMetadata("pricing");
 
@@ -27,6 +32,14 @@ export default function PricingPage() {
       </section>
 
       <section className="py-16 md:py-24">
+        <div className="mx-auto mb-8 max-w-6xl px-6 text-center">
+          <p className="text-xs font-medium uppercase tracking-wider text-accent">
+            US Pricing
+          </p>
+          <p className="mx-auto mt-2 max-w-2xl text-sm text-muted">
+            {pricingDisclaimer}
+          </p>
+        </div>
         <div className="mx-auto grid max-w-6xl items-stretch gap-8 px-6 md:grid-cols-3">
           {pricingPlans.map((plan) => (
             <div
@@ -115,9 +128,11 @@ export default function PricingPage() {
               <dd className="mt-2 text-sm leading-relaxed text-muted">
                 New users get 7 days of full Caplio Pro access. When the trial
                 ends, Caplio does not stop working — screenshot capture remains
-                free. Choose a monthly ($0.99), yearly ($5.99), or Lifetime
-                ($9.99 one-time) purchase only if you want to keep using Caplio
-                Pro features. Your library remains on your Mac.
+                free. Choose a monthly ({pricingUs.monthly}), yearly (
+                {pricingUs.yearly}), or Lifetime ({pricingUs.lifetime}{" "}
+                one-time) US purchase only if you want to keep using Caplio Pro
+                features. Actual App Store prices may vary by country or region.
+                Your library remains on your Mac.
               </dd>
             </div>
             <div>
@@ -131,11 +146,12 @@ export default function PricingPage() {
             <div>
               <dt className="font-medium">What is Lifetime?</dt>
               <dd className="mt-2 text-sm leading-relaxed text-muted">
-                Lifetime is a one-time $9.99 purchase that unlocks Caplio Pro
-                without a recurring subscription. If you already have an active
-                subscription, purchasing Lifetime does not automatically cancel
-                it. Manage or cancel that subscription through your Apple
-                Account to avoid future renewals.
+                Lifetime is a one-time {pricingUs.lifetime} US purchase that
+                unlocks Caplio Pro without a recurring subscription. Actual App
+                Store prices may vary by country or region. If you already have
+                an active subscription, purchasing Lifetime does not
+                automatically cancel it. Manage or cancel that subscription
+                through your Apple Account to avoid future renewals.
               </dd>
             </div>
             <div>
