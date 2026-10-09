@@ -22,27 +22,32 @@ export const productFaqs: FaqItem[] = [
   {
     question: "What does Caplio do?",
     answer:
-      "Caplio lets you capture screenshots (region, full screen, window, and fixed region), organize related captures in Capture Sessions, index screenshots and images from folders you choose, search recognized text with on-device OCR, browse a Timeline, find similar images, optionally organize eligible processed library images by Date, Category, or Capture Session, and create PDF or DOCX documents.",
+      "Caplio lets you capture screenshots (region, full screen, and fixed region for free; Window Capture with Caplio Pro), organize related captures in Capture Sessions, index screenshots and images from folders you choose, search recognized text with on-device OCR, browse a Timeline, find similar images, optionally organize eligible processed library images by Date, Category, or Capture Session, and create PDF or DOCX documents.",
   },
   {
     question: "Can Caplio take screenshots?",
     answer:
-      "Yes. Caplio can capture a region, the full screen, a window, or a fixed region using customizable global keyboard shortcuts. Screenshot capture is free.",
+      "Yes. Caplio can capture a selected region, the full screen, or a fixed region with customizable global keyboard shortcuts. Those modes are free forever. Window Capture is a Caplio Pro feature and is included during the 7-day Pro trial.",
   },
   {
     question: "Can users customize capture keyboard shortcuts?",
     answer:
-      "Yes. Caplio supports customizable global keyboard shortcuts for capture and related actions.",
+      "Yes. Caplio supports customizable global keyboard shortcuts for available capture modes and related actions. Customizing shortcuts does not unlock paid capture modes such as Window Capture.",
   },
   {
     question: "Do I need Caplio Pro to take screenshots?",
     answer:
-      "No. Screenshot capture is free forever. You do not need Caplio Pro just to take screenshots. Caplio Pro unlocks the searchable visual library and advanced organization and document workflows.",
+      "No. Region, full-screen, and fixed-region capture are free forever. You do not need a subscription just to keep using those modes after the trial. Window Capture requires Caplio Pro (or the 7-day Pro trial).",
+  },
+  {
+    question: "Is Window Capture free?",
+    answer:
+      "No. Window Capture requires Caplio Pro or Lifetime. It is included during the 7-day Caplio Pro trial. After the trial, free capture modes remain available; Window Capture requires an active Pro subscription or Lifetime purchase.",
   },
   {
     question: "What features require Caplio Pro?",
     answer:
-      "Caplio Pro unlocks the searchable visual library, on-device OCR search workflow, Similar Images, Document Builder, and advanced file organization. Screenshot capture remains free.",
+      "Caplio Pro unlocks Window Capture, the searchable visual library, on-device OCR search workflow, Similar Images, Document Builder, and advanced file organization. Region, full-screen, and fixed-region capture remain free forever.",
   },
   {
     question: "What are Capture Sessions?",
@@ -147,7 +152,7 @@ export const productFaqs: FaqItem[] = [
   {
     question: "Does Caplio have a free trial?",
     answer:
-      "Screenshot capture is free forever. Caplio also provides a 7-day trial of Caplio Pro on your Mac so you can explore the searchable visual library and advanced organization and document workflows. After the trial, you can keep capturing for free without a subscription. Purchase and subscription options are available through the app and Mac App Store.",
+      "Region, full-screen, and fixed-region capture are free forever. Caplio also provides a 7-day trial of Caplio Pro on your Mac so you can explore Window Capture, the searchable visual library, and advanced organization and document workflows. After the trial, free capture continues without a subscription. Window Capture and other Pro features require Caplio Pro or Lifetime. Purchase options are available through the app and Mac App Store.",
   },
 ];
 
@@ -169,6 +174,7 @@ export function getFaqPageJsonLd(faqs: FaqItem[] = productFaqs) {
 const homepageFaqQuestions = [
   "What is Caplio?",
   "Can Caplio take screenshots?",
+  "Is Window Capture free?",
   "Can users customize capture keyboard shortcuts?",
   "Do I need Caplio Pro to take screenshots?",
   "What features require Caplio Pro?",

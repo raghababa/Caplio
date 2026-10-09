@@ -117,22 +117,24 @@ export default function PricingPage() {
                 Do I need Caplio Pro to take screenshots?
               </dt>
               <dd className="mt-2 text-sm leading-relaxed text-muted">
-                No. Screenshot capture is free forever. You do not need a
-                subscription or Lifetime purchase just to continue capturing.
-                Caplio Pro unlocks the searchable visual library and advanced
-                organization and document workflows.
+                No. Region, full-screen, and fixed-region capture are free
+                forever. You do not need a subscription or Lifetime purchase
+                just to keep using those modes. Window Capture requires Caplio
+                Pro (included in the 7-day Pro trial). Caplio Pro also unlocks
+                the searchable visual library and advanced organization and
+                document workflows.
               </dd>
             </div>
             <div>
               <dt className="font-medium">What happens after the Pro trial?</dt>
               <dd className="mt-2 text-sm leading-relaxed text-muted">
-                New users get 7 days of full Caplio Pro access. When the trial
-                ends, Caplio does not stop working — screenshot capture remains
-                free. Choose a monthly ({pricingUs.monthly}), yearly (
-                {pricingUs.yearly}), or Lifetime ({pricingUs.lifetime}{" "}
-                one-time) US purchase only if you want to keep using Caplio Pro
-                features. Actual App Store prices may vary by country or region.
-                Your library remains on your Mac.
+                New users get 7 days of full Caplio Pro access, including Window
+                Capture. When the trial ends, Caplio does not stop working —
+                free capture modes remain available. Window Capture and other
+                Caplio Pro features require a monthly ({pricingUs.monthly}),
+                yearly ({pricingUs.yearly}), or Lifetime ({pricingUs.lifetime}{" "}
+                one-time) US purchase. Actual App Store prices may vary by
+                country or region. Your library remains on your Mac.
               </dd>
             </div>
             <div>

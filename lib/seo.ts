@@ -51,7 +51,7 @@ export function getSoftwareApplicationJsonLd() {
     applicationCategory: "ProductivityApplication",
     operatingSystem: "macOS",
     description:
-      "Caplio is a private screenshot manager and searchable visual library for Mac. Capture region, full screen, window, or fixed-region screenshots with customizable shortcuts; organize Capture Sessions; search text inside images with on-device OCR; find similar images; optionally organize eligible library files by Date, Category, or Capture Session; and export PDF or Word documents. Your visual library stays on your Mac.",
+      "Caplio is a private screenshot manager and searchable visual library for Mac. Free forever: region, full-screen, and fixed-region capture with customizable shortcuts. Caplio Pro adds Window Capture, on-device OCR search, Capture Sessions workflows, Similar Images, optional file organization, and PDF/Word document export. Your visual library stays on your Mac.",
     downloadUrl: siteConfig.appStoreUrl,
     offers: [
       {
@@ -60,7 +60,7 @@ export function getSoftwareApplicationJsonLd() {
         price: "0",
         priceCurrency: "USD",
         description:
-          "Screenshot capture is free forever. New users also get 7 days of full Caplio Pro access.",
+          "Region, full-screen, and fixed-region capture are free forever. New users also get 7 days of Caplio Pro access, including Window Capture.",
       },
       {
         "@type": "Offer",
@@ -91,12 +91,9 @@ export function getSoftwareApplicationJsonLd() {
       },
     ],
     featureList: [
-      "Free screenshot capture for Mac",
-      "Region capture",
-      "Full-screen capture",
-      "Window capture and window selection",
-      "Fixed-region capture",
-      "Customizable global capture shortcuts",
+      "Free region, full-screen, and fixed-region screenshot capture for Mac",
+      "Customizable global capture shortcuts for available modes",
+      "Window Capture with Caplio Pro",
       "Capture Sessions",
       "Search screenshots and images",
       "On-device OCR with Apple Vision",

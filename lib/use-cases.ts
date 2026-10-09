@@ -34,7 +34,7 @@ export const useCases: UseCase[] = [
       "Screenshots pile up on the Desktop and in Pictures. Finder search does not read text inside images, and renaming files by hand is slow. You need an organizer built for screenshots and images on macOS.",
     howTitle: "How Caplio helps",
     how: [
-      "Capture region, full screen, window, or fixed-region screenshots (screenshot capture is free)",
+      "Capture region, full-screen, or fixed-region screenshots for free; Window Capture with Caplio Pro",
       "Keep related captures together in Capture Sessions",
       "Index screenshots and images from folders you choose",
       "Browse your library in a timeline with categories and thumbnails",
@@ -216,7 +216,7 @@ export const useCases: UseCase[] = [
       "Run OCR and search on-device",
       "Avoid cloud OCR and remote AI analysis of your files",
       "Choose which folders Caplio can access",
-      "Download from the Mac App Store — screenshot capture is free; try Caplio Pro for 7 days",
+      "Download from the Mac App Store — free capture modes stay free; try Caplio Pro for 7 days",
     ],
     whyCaplio: [
       "Local-first by design",
@@ -283,14 +283,14 @@ export const useCases: UseCase[] = [
       "During live classes, you need to capture quickly without losing focus. Afterward, related screenshots are scattered and hard to turn into study notes.",
     howTitle: "How Caplio helps",
     how: [
-      "Capture a region, full screen, window, or fixed region with global shortcuts",
+      "Capture a region, full screen, or fixed region with global shortcuts (Window Capture with Caplio Pro)",
       "Keep every lecture capture in one Capture Session",
       "Search text inside slides later with on-device OCR",
       "Select and reorder the useful images",
       "Export Image + Text, Image Only, or Text Only as PDF or DOCX",
     ],
     whyCaplio: [
-      "Screenshot capture is free",
+      "Region, full-screen, and fixed-region capture are free",
       "Sessions keep class context together",
       "Local OCR for private study material",
       "Document Builder for notes you can revise",
@@ -564,7 +564,7 @@ export const useCases: UseCase[] = [
       "Many screenshot and “AI organizer” tools send images or extracted text to remote services. For class notes, client work, research, or internal screens, that boundary matters.",
     howTitle: "How Caplio helps",
     how: [
-      "Capture screenshots with free region, full-screen, window, and fixed-region modes",
+      "Capture screenshots with free region, full-screen, and fixed-region modes (Window Capture with Caplio Pro)",
       "Keep related work in Capture Sessions",
       "Search text inside screenshots with on-device Apple Vision OCR",
       "Export selected captures to PDF or Word without cloud document AI",

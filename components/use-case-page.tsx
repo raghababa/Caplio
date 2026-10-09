@@ -198,8 +198,9 @@ export function UseCasePage({ useCase }: UseCasePageProps) {
               Try Caplio on your Mac
             </h2>
             <p className="mt-3 text-muted">
-              Screenshot capture is free. Try Caplio Pro free for 7 days. Caplio
-              Pro and Lifetime are available on the Mac App Store.
+              Region, full-screen, and fixed-region capture are free. Try Caplio
+              Pro free for 7 days — including Window Capture. Caplio Pro and
+              Lifetime are available on the Mac App Store.
             </p>
             <div className="mt-6">
               <Button href={siteConfig.appStoreUrl}>

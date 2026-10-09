@@ -17,11 +17,10 @@ export function PricingTeaser() {
             forever.
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted">
-            New users get full Caplio Pro access for 7 days. After the trial,
-            screenshot capture stays free — no subscription required just to
-            keep capturing. Caplio Pro unlocks the searchable visual library,
-            on-device OCR search, Similar Images, Document Builder, and advanced
-            file organization.
+            Region, full-screen, and fixed-region capture are free forever. New
+            users get 7 days of Caplio Pro to try Window Capture, OCR search,
+            and advanced organization. After the trial, free capture continues —
+            Window Capture and other Pro features need Caplio Pro or Lifetime.
           </p>
           <p className="mt-4 text-xs font-medium uppercase tracking-wider text-accent">
             US Pricing

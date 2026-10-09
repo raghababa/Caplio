@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Caplio",
   tagline: "Capture it. Find it. Turn it into something useful.",
-  slogan: "Screenshot capture is free.",
+  slogan: "Core screenshot capture is free forever.",
   description:
     "Capture screenshots with customizable shortcuts, organize them into Sessions, search text inside images with on-device OCR, and export PDF or Word documents. Caplio is a private screenshot manager and OCR screenshot organizer for Mac.",
   privacyLine: "Your visual library stays on your Mac.",
@@ -81,7 +81,7 @@ export const valueBeats = [
   {
     title: "Capture",
     description:
-      "Region, full screen, window, and fixed-region capture with customizable global shortcuts. Screenshot capture is free.",
+      "Region, full-screen, and fixed-region capture with customizable shortcuts — free forever. Window Capture is available with Caplio Pro.",
   },
   {
     title: "Sessions",
@@ -113,9 +113,9 @@ export const features: Feature[] = [
     id: "capture",
     title: "Capture without breaking your flow",
     description:
-      "Capture a region, the full screen, a window, or a fixed region directly with Caplio. Customizable global keyboard shortcuts let you capture without interrupting what you're doing.",
+      "Capture a selected region, the full screen, or a fixed region directly with Caplio. Customizable global keyboard shortcuts let you capture without interrupting what you're doing.",
     detail:
-      "Screenshot capture is free — you do not need Caplio Pro just to take screenshots.",
+      "Region, full-screen, and fixed-region capture are free forever. Window Capture requires Caplio Pro (included in the 7-day Pro trial). Customizable shortcuts apply to available capture modes and do not unlock paid modes.",
     image: "/screenshots/capture.jpg",
     imageAlt:
       "Caplio menu bar capture menu showing Capture Area and Full Screen shortcuts",
@@ -220,14 +220,12 @@ export const pricingPlans = [
     badge: "Free",
     prices: [{ amount: "Free", period: "forever" }],
     description:
-      "Screenshot capture stays free forever. New users also get 7 days of full Caplio Pro access to try the complete experience.",
+      "Capture selected regions, the full screen, or a fixed region with customizable keyboard shortcuts. Try Caplio Pro free for 7 days to explore Window Capture, OCR search, and advanced screenshot organization. Free capture continues after your trial ends.",
     features: [
-      "Region capture",
-      "Full-screen capture",
-      "Window capture",
-      "Fixed-region capture",
+      "Region Capture",
+      "Full-screen Capture",
+      "Fixed-region Capture",
       "Customizable capture shortcuts",
-      "7-day Caplio Pro trial",
     ],
     cta: "Download on the Mac App Store",
     highlighted: false,
@@ -240,8 +238,9 @@ export const pricingPlans = [
       { amount: pricingUs.yearly, period: "/year" },
     ],
     description:
-      "Continue Caplio Pro after your 7-day trial with a monthly or yearly subscription. Unlock the searchable visual library, on-device OCR search, Similar Images, Document Builder, and advanced file organization. Screenshot capture stays free either way.",
+      "Continue Caplio Pro after your 7-day trial with a monthly or yearly subscription. Unlock Window Capture, the searchable visual library, on-device OCR search, Similar Images, Document Builder, and advanced file organization. Free capture modes stay available either way.",
     features: [
+      "Window Capture",
       "Searchable visual library",
       "On-device OCR and search",
       "Similar Images",
@@ -256,8 +255,9 @@ export const pricingPlans = [
     name: "Lifetime",
     badge: "Pay once",
     prices: [{ amount: pricingUs.lifetime, period: "one-time" }],
-    description: `Unlock Caplio Pro with a one-time ${pricingUs.lifetime} purchase. No recurring subscription. Screenshot capture remains free either way.`,
+    description: `Unlock Caplio Pro with a one-time ${pricingUs.lifetime} purchase. No recurring subscription. Includes Window Capture and all Caplio Pro features. Free capture modes remain available either way.`,
     features: [
+      "Window Capture",
       "All Caplio Pro features",
       "Searchable visual library",
       "On-device OCR and search",
