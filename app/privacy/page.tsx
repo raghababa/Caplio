@@ -16,10 +16,10 @@ const sections: PrivacySection[] = [
   {
     title: "Privacy at a Glance",
     content: [
-      `${siteConfig.name} is a local-first macOS screenshot manager and searchable visual library. Your visual library stays on your Mac.`,
+      `${siteConfig.name} is a local-first macOS screenshot manager and searchable visual library. Your visual library is processed on your Mac. Meeting Recorder also lets you record and transcribe meetings locally.`,
       "OCR, categorization, similarity detection, search indexing, thumbnails, and document processing run on-device. Screenshots, OCR text, search queries, filenames, folder paths, Capture Session names, and document content are not uploaded for processing.",
       "Current Caplio builds do not include Caplio-controlled usage analytics, do not transmit an analytics installation identifier, and do not use a third-party analytics SDK such as TelemetryDeck.",
-      "Caplio may still use the network for Apple App Store / StoreKit purchase and entitlement services, and when you choose to open Privacy or Terms links or send feedback by email. Caplio does not sell personal data and does not use advertising trackers.",
+      "Caplio may still use the network for Apple App Store / StoreKit purchase and entitlement services, Apple speech-model downloads, and when you choose to open Privacy or Terms links or send feedback by email. Caplio does not sell personal data and does not use advertising trackers.",
     ],
   },
   {
@@ -27,7 +27,7 @@ const sections: PrivacySection[] = [
     content: [
       "Core Caplio features run on your Mac. OCR, indexing, search, automatic categorization of indexed images, thumbnail generation, Similar Images processing, and Document Builder processing are performed locally/on-device.",
       "Caplio does not require cloud AI to search your library.",
-      "The following stay on your Mac and are not uploaded for remote library processing:",
+      "Caplio processes and stores the following locally rather than uploading them for remote library or meeting processing. Exports and copies you choose to share are described below:",
       <ul
         key="local-content-list"
         className="list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-muted"
@@ -42,6 +42,10 @@ const sections: PrivacySection[] = [
         <li>Capture Session names</li>
         <li>document titles</li>
         <li>document text and content</li>
+        <li>meeting audio and video</li>
+        <li>meeting titles, dates, duration, source choices, and recording status</li>
+        <li>meeting transcripts, language choices, and transcript timing</li>
+        <li>meeting settings and local recording/transcription diagnostics</li>
         <li>thumbnails</li>
         <li>manually edited titles</li>
         <li>Similar Images screenshot/group IDs</li>
@@ -50,6 +54,16 @@ const sections: PrivacySection[] = [
         <li>the app’s local trial installation ID</li>
         <li>local diagnostic logs (not automatically uploaded)</li>
       </ul>,
+    ],
+  },
+  {
+    title: "Meeting Recorder",
+    content: [
+      "When you start a meeting recording, Caplio captures the sources you choose. Depending on the recording mode, these can include microphone audio, system audio, and video of a selected window or display. Recordings may contain other people’s voices and information visible on screen. Make sure you have any consent or permission needed before recording or sharing a meeting.",
+      "Caplio uses macOS microphone and Screen Recording permissions for the selected sources. Screen Recording access can also be needed to capture system audio without saving video. You can manage these permissions in macOS Privacy & Security settings.",
+      "Meeting media and transcripts are processed and saved locally. Caplio does not upload meeting recordings, transcripts, or meeting titles to Caplio servers or a cloud transcription service.",
+      "When you request transcription of a saved meeting, Caplio uses Apple’s on-device speech processing on supported Macs. There is no cloud transcription fallback. If the required language model is not installed, Caplio requests its download from Apple. Apple manages these models through macOS; the download requires network access, but Caplio does not send the meeting recording or transcript with that request.",
+      "You can export recordings, transcript text, and PDFs to a destination you choose. These are separate copies. A destination may be synced or backed up by macOS or another service, and anything you choose to share is handled by that destination or service. Caplio does not control those copies or their retention.",
     ],
   },
   {
@@ -66,7 +80,7 @@ const sections: PrivacySection[] = [
     content: [
       "In current Caplio builds, Caplio does not collect Caplio-controlled product-usage analytics and does not include TelemetryDeck or another third-party analytics transport.",
       "Production analytics behavior uses a no-op tracker: Caplio does not send automatic app telemetry for product analytics.",
-      "This does not mean Caplio never uses the network. Apple’s App Store and StoreKit services may still communicate with Apple when you purchase, restore, or verify Caplio Pro access.",
+      "This does not mean Caplio never uses the network. Apple’s App Store and StoreKit services may still communicate with Apple when you purchase, restore, or verify Library Pro or Meeting Recorder access. Apple speech-model downloads may also use the network.",
     ],
   },
   {
@@ -81,14 +95,17 @@ const sections: PrivacySection[] = [
     title: "Purchases and Subscriptions",
     content: [
       "Purchases and subscriptions are processed through Apple’s App Store and StoreKit. Caplio does not receive your credit card or other payment card details.",
-      "Internet access may be used for Apple App Store purchase and subscription services, including verifying Caplio Pro access and restoring purchases.",
+      "Internet access may be used for Apple App Store purchase and subscription services, including verifying Library Pro and the separate Meeting Recorder Lifetime entitlement, restoring purchases, and receiving purchase or revocation updates.",
     ],
   },
   {
     title: "Local Data Storage",
     content: [
       "Caplio stores product and library information locally on your Mac as needed for functionality. This may include image library and index information, OCR and indexing data, watched-folder authorization, settings, local trial state, and local diagnostic logs.",
-      "Local diagnostic logs are not automatically uploaded. Feedback is user-initiated through your email app when you choose to contact support.",
+      "Meeting Recorder stores its recordings, transcripts, and meeting database in Caplio’s local application-support storage. Meeting records include titles, creation and recording times, duration, selected audio/video source types, language, transcript text and timing, file references, recording/transcription status, and error information. Caplio also remembers recording-source preferences in local settings.",
+      "Temporary audio and transcript files may be created during transcription. Interrupted recordings may leave partial media for recovery; failed or interrupted processing may leave temporary files. Caplio does not promise that every partial or temporary file is removed immediately.",
+      "Local meeting diagnostics include recording and dropped-buffer counts, transcription-attempt counts, and capture, writer, or transcription errors. Development builds may also log timing, audio-level measurements, and transcript-formatting counts. These diagnostics are not automatically uploaded by Caplio.",
+      "Feedback is user-initiated through your email app. If you choose to send meeting content or diagnostic information to support, that information leaves your device through your email service. Review what you include before sending.",
       "Core library, search, and OCR features do not require uploading your library content.",
     ],
   },
@@ -108,6 +125,7 @@ const sections: PrivacySection[] = [
         </a>
         .
       </>,
+      "Apple also provides the on-device speech framework and downloads and manages its language models. Apple’s services and any information Apple handles through them are subject to Apple’s privacy practices. Local meeting processing does not mean that the app or macOS never communicates with Apple.",
       "Opening Privacy Policy or Terms links is user-initiated. Sending feedback opens a user-initiated email composer.",
       "This website does not use third-party analytics, advertising trackers, or cookie banners.",
     ],
@@ -115,7 +133,10 @@ const sections: PrivacySection[] = [
   {
     title: "Data Retention and User Control",
     content: [
-      "Deleting Caplio or removing its local application data removes locally stored Caplio data, subject to normal macOS and App Store behavior.",
+      "Saved meetings remain in Caplio’s local storage until you delete them or remove the relevant application data. Caplio does not automatically delete saved meetings after a fixed retention period.",
+      "Deleting a meeting removes its stored media, transcript, and associated meeting records. If deletion is interrupted or fails, some local files or records may remain until cleanup succeeds; Caplio retries pending meeting deletions when its meeting library recovers. This is not a promise of secure erasure.",
+      "Deleting a meeting does not delete recordings, transcripts, or PDFs you have already exported, shared copies, backups, or Apple-managed speech models. Manage those separately in the relevant folders, services, or system settings.",
+      "Removing the app alone may leave local application data or backups behind. To remove locally stored Caplio data, remove the relevant application data as well. Your macOS, backup, and sync settings can affect what copies remain.",
       "Apple retains purchase and subscription records according to Apple’s policies. Historical analytics from older Caplio versions, if any, are governed by the third-party practices applicable when that data was transmitted.",
     ],
   },
@@ -149,7 +170,7 @@ export default function PrivacyPage() {
   return (
     <SiteLayout>
       <article className="mx-auto max-w-3xl px-6 py-20 md:py-28">
-        <p className="text-sm text-muted">Last updated: October 9, 2026</p>
+        <p className="text-sm text-muted">Last updated: November 18, 2026</p>
         <h1 className="mt-2 text-4xl font-semibold tracking-tight">
           Privacy Policy
         </h1>
